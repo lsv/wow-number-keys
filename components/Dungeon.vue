@@ -46,6 +46,10 @@ export default class Dungeon extends Vue {
   total(start: number | null, end: number | null): number {
     let count = 0
     this.data?.runs.forEach((run) => {
+      if (!run) {
+        return
+      }
+
       if (!start && !end) {
         count++
         return
