@@ -1,0 +1,1930 @@
+{
+  "characterDetails": {
+    "character": {
+      "covenant": {
+        "id": 3,
+        "name": "Night Fae",
+        "icon": "ui_sigil_nightfae",
+        "renownLevel": 40,
+        "soulbind": {
+          "id": 1,
+          "name": "Niya"
+        }
+      },
+      "id": 123,
+      "persona_id": 27973978,
+      "name": "Huntrish",
+      "class": {
+        "id": 3,
+        "name": "Hunter",
+        "slug": "hunter"
+      },
+      "race": {
+        "id": 9,
+        "name": "Goblin",
+        "slug": "goblin",
+        "faction": "horde"
+      },
+      "faction": "horde",
+      "level": 60,
+      "spec": {
+        "name": "Beast Mastery",
+        "slug": "beast-mastery"
+      },
+      "path": "/characters/eu/draenor/Huntrish",
+      "realm": {
+        "id": 579,
+        "connectedRealmId": 308,
+        "name": "Draenor",
+        "altName": null,
+        "slug": "draenor",
+        "altSlug": "draenor",
+        "locale": "en_GB",
+        "isConnected": false
+      },
+      "region": {
+        "name": "Europe",
+        "slug": "eu",
+        "short_name": "EU"
+      },
+      "gender": "female",
+      "achievementPoints": 14585,
+      "honorableKills": 0,
+      "itemLevelEquipped": 221,
+      "itemLevelTotal": 0,
+      "thumbnailUrl": "//render-eu.worldofwarcraft.com/character/draenor/117/165253237-avatar.jpg?alt=wow/static/images/2d/avatar/9-1.jpg",
+      "guild": {
+        "id": 1587633,
+        "name": "Hatchling",
+        "faction": "horde",
+        "realm": {
+          "id": 579,
+          "connectedRealmId": 308,
+          "name": "Draenor",
+          "altName": null,
+          "slug": "draenor",
+          "altSlug": "draenor",
+          "locale": "en_GB",
+          "isConnected": false
+        },
+        "region": {
+          "name": "Europe",
+          "slug": "eu",
+          "short_name": "EU"
+        },
+        "path": "/guilds/eu/draenor/Hatchling"
+      },
+      "talents": "1111200",
+      "talentsDetails": [
+        {
+          "specId": 253,
+          "icon": "ability_hunter_bestialdiscipline",
+          "spellId": 267116,
+          "classId": 3,
+          "tierId": 0,
+          "columnId": 1
+        },
+        {
+          "specId": 253,
+          "icon": "icon_upgradestone_beast_uncommon",
+          "spellId": 199528,
+          "classId": 3,
+          "tierId": 1,
+          "columnId": 1
+        },
+        {
+          "specId": 0,
+          "icon": "ability_hunter_onewithnature",
+          "spellId": 270581,
+          "classId": 3,
+          "tierId": 2,
+          "columnId": 1
+        },
+        {
+          "specId": 253,
+          "icon": "ability_hunter_thrillofthehunt",
+          "spellId": 257944,
+          "classId": 3,
+          "tierId": 3,
+          "columnId": 1
+        },
+        {
+          "specId": 0,
+          "icon": "spell_shaman_bindelemental",
+          "spellId": 109248,
+          "classId": 3,
+          "tierId": 4,
+          "columnId": 2
+        },
+        {
+          "specId": 253,
+          "icon": "warrior_talent_icon_thunderstruck",
+          "spellId": 199530,
+          "classId": 3,
+          "tierId": 5,
+          "columnId": 0
+        },
+        {
+          "specId": 253,
+          "icon": "ability_deathwing_assualtaspects",
+          "spellId": 191384,
+          "classId": 3,
+          "tierId": 6,
+          "columnId": 0
+        }
+      ]
+    },
+    "team": null,
+    "characterCustomizations": {
+      "profile_banner": "hordebanner9",
+      "profile_frame": null,
+      "biography": null,
+      "main_character": null,
+      "bnet_battletag": null,
+      "twitch_profile": "",
+      "youtube_profile": "",
+      "twitter_profile": "",
+      "discord_profile": "",
+      "wowhead_profile": "",
+      "isClaimed": true
+    },
+    "patronLevel": {
+      "level": 3,
+      "name": "Revered",
+      "slug": "revered"
+    },
+    "meta": {
+      "firstCrawledAt": "2021-03-05T23:33:17.000Z",
+      "lastCrawledAt": "2021-05-14T02:04:16.000Z",
+      "loggedOutAt": "2021-05-13T23:33:13.000Z",
+      "missingAt": null
+    },
+    "newsArticle": null,
+    "user": {},
+    "raidProgress": [
+      {
+        "raid": "castle-nathria",
+        "aotc": null,
+        "cuttingEdge": null,
+        "encountersDefeated": {
+          "normal": [
+            {
+              "slug": "shriekwing",
+              "firstDefeated": "2021-01-14T19:27:58.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 7,
+              "lastDefeated": "2021-04-29T17:20:26.000Z"
+            },
+            {
+              "slug": "huntsman-altimor",
+              "firstDefeated": "2021-01-14T20:10:44.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 9,
+              "lastDefeated": "2021-04-29T17:45:21.000Z"
+            },
+            {
+              "slug": "hungering-destroyer",
+              "firstDefeated": "2021-01-14T20:33:39.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 9,
+              "lastDefeated": "2021-04-22T17:48:19.000Z"
+            },
+            {
+              "slug": "artificer-xymox",
+              "firstDefeated": "2021-02-19T21:41:11.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 7,
+              "lastDefeated": "2021-04-22T18:44:39.000Z"
+            },
+            {
+              "slug": "sun-kings-salvation",
+              "firstDefeated": "2021-02-19T21:54:20.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 7,
+              "lastDefeated": "2021-04-22T18:26:52.000Z"
+            },
+            {
+              "slug": "lady-inerva-darkvein",
+              "firstDefeated": "2021-01-14T21:34:11.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 9,
+              "lastDefeated": "2021-04-22T18:04:44.000Z"
+            },
+            {
+              "slug": "the-council-of-blood",
+              "firstDefeated": "2021-03-13T17:05:51.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 7,
+              "lastDefeated": "2021-04-22T19:00:41.000Z"
+            },
+            {
+              "slug": "sludgefist",
+              "firstDefeated": "2021-03-26T22:05:22.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 4,
+              "lastDefeated": "2021-04-22T19:09:42.000Z"
+            },
+            {
+              "slug": "stone-legion-generals",
+              "firstDefeated": "2021-03-26T22:42:50.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 5,
+              "lastDefeated": "2021-04-22T19:24:37.000Z"
+            },
+            {
+              "slug": "sire-denathrius",
+              "firstDefeated": "2021-03-29T19:22:07.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 4,
+              "lastDefeated": "2021-04-22T19:48:33.000Z"
+            }
+          ],
+          "heroic": [
+            {
+              "slug": "shriekwing",
+              "firstDefeated": "2021-03-08T19:50:09.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 12,
+              "lastDefeated": "2021-05-12T17:38:29.000Z"
+            },
+            {
+              "slug": "huntsman-altimor",
+              "firstDefeated": "2021-03-08T20:05:56.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 10,
+              "lastDefeated": "2021-05-05T17:46:22.000Z"
+            },
+            {
+              "slug": "hungering-destroyer",
+              "firstDefeated": "2021-03-08T20:25:58.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 9,
+              "lastDefeated": "2021-05-05T17:59:54.000Z"
+            },
+            {
+              "slug": "artificer-xymox",
+              "firstDefeated": "2021-03-08T21:33:09.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 5,
+              "lastDefeated": "2021-05-05T19:43:30.000Z"
+            },
+            {
+              "slug": "sun-kings-salvation",
+              "firstDefeated": "2021-03-08T21:56:30.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 7,
+              "lastDefeated": "2021-05-05T18:48:04.000Z"
+            },
+            {
+              "slug": "lady-inerva-darkvein",
+              "firstDefeated": "2021-03-08T21:03:11.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 8,
+              "lastDefeated": "2021-05-05T18:12:40.000Z"
+            },
+            {
+              "slug": "the-council-of-blood",
+              "firstDefeated": "2021-03-10T22:26:55.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 4,
+              "lastDefeated": "2021-05-05T20:03:12.000Z"
+            },
+            {
+              "slug": "sludgefist",
+              "firstDefeated": "2021-05-03T19:07:17.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 3,
+              "lastDefeated": "2021-05-12T18:36:14.000Z"
+            },
+            {
+              "slug": "stone-legion-generals",
+              "firstDefeated": "2021-05-10T19:06:25.000Z",
+              "itemLevel": 0,
+              "artifactTraits": 0,
+              "numKills": 2,
+              "lastDefeated": "2021-05-12T19:28:30.000Z"
+            }
+          ],
+          "mythic": []
+        }
+      }
+    ],
+    "itemDetails": {
+      "item_level_equipped": 221,
+      "item_level_total": 0,
+      "artifact_traits": 0,
+      "corruption": {
+        "added": 0,
+        "resisted": 0,
+        "total": 0,
+        "cloakRank": 0,
+        "spells": []
+      },
+      "items": {
+        "head": {
+          "item_id": 178816,
+          "item_level": 226,
+          "icon": "inv_helm_mail_oribosdungeon_c_01",
+          "name": "Nathrian Usurper's Mask",
+          "item_quality": 4,
+          "is_legendary": false,
+          "is_azerite_armor": true,
+          "azerite_powers": [
+            {
+              "id": 580,
+              "spell": {
+                "id": 0,
+                "school": 0,
+                "icon": "inv_misc_questionmark",
+                "name": "Unknown",
+                "rank": null
+              },
+              "tier": 999
+            },
+            {
+              "id": 580,
+              "spell": {
+                "id": 0,
+                "school": 0,
+                "icon": "inv_misc_questionmark",
+                "name": "Unknown",
+                "rank": null
+              },
+              "tier": 999
+            },
+            {
+              "id": 580,
+              "spell": {
+                "id": 0,
+                "school": 0,
+                "icon": "inv_misc_questionmark",
+                "name": "Unknown",
+                "rank": null
+              },
+              "tier": 999
+            },
+            {
+              "id": 580,
+              "spell": {
+                "id": 0,
+                "school": 0,
+                "icon": "inv_misc_questionmark",
+                "name": "Unknown",
+                "rank": null
+              },
+              "tier": 999
+            },
+            null
+          ],
+          "corruption": {
+            "added": 0,
+            "resisted": 0,
+            "total": 0
+          },
+          "gems": [],
+          "bonuses": [
+            7354,
+            7359,
+            6652,
+            7193,
+            1540,
+            6646
+          ]
+        },
+        "neck": {
+          "item_id": 178827,
+          "item_level": 220,
+          "icon": "inv_7_0raid_necklace_03a",
+          "name": "Sin Stained Pendant",
+          "item_quality": 4,
+          "is_legendary": false,
+          "is_azerite_armor": false,
+          "azerite_powers": [],
+          "corruption": {
+            "added": 0,
+            "resisted": 0,
+            "total": 0
+          },
+          "gems": [],
+          "bonuses": [
+            7359,
+            6652,
+            7193,
+            7387,
+            1534,
+            6646
+          ]
+        },
+        "shoulder": {
+          "item_id": 172327,
+          "item_level": 235,
+          "icon": "inv_mail_mawraid_d_01_shoulder",
+          "name": "Boneshatter Pauldrons",
+          "item_quality": 5,
+          "is_legendary": true,
+          "is_azerite_armor": false,
+          "azerite_powers": [],
+          "corruption": {
+            "added": 0,
+            "resisted": 0,
+            "total": 0
+          },
+          "gems": [],
+          "bonuses": [
+            7005,
+            6649,
+            6647,
+            6758,
+            1532
+          ]
+        },
+        "back": {
+          "item_id": 180123,
+          "item_level": 226,
+          "enchant": 6208,
+          "icon": "inv_cape_mail_oribosdungeon_c_01",
+          "name": "Drape of Twisted Loyalties",
+          "item_quality": 4,
+          "is_legendary": false,
+          "is_azerite_armor": false,
+          "azerite_powers": [],
+          "corruption": {
+            "added": 0,
+            "resisted": 0,
+            "total": 0
+          },
+          "gems": [],
+          "bonuses": [
+            7389,
+            7359,
+            6652,
+            1540,
+            6646
+          ]
+        },
+        "chest": {
+          "item_id": 179353,
+          "item_level": 213,
+          "enchant": 6230,
+          "icon": "inv_chest_mail_oribosdungeon_c_01",
+          "name": "Harness of Twisted Whims",
+          "item_quality": 4,
+          "is_legendary": false,
+          "is_azerite_armor": false,
+          "azerite_powers": [],
+          "corruption": {
+            "added": 0,
+            "resisted": 0,
+            "total": 0
+          },
+          "gems": [],
+          "bonuses": [
+            7359,
+            6652,
+            7350,
+            1527,
+            6646
+          ]
+        },
+        "waist": {
+          "item_id": 183016,
+          "item_level": 213,
+          "icon": "inv_belt_mail_revendrethraid_d_01",
+          "name": "Load-Bearing Belt",
+          "item_quality": 4,
+          "is_legendary": false,
+          "is_azerite_armor": false,
+          "azerite_powers": [],
+          "corruption": {
+            "added": 0,
+            "resisted": 0,
+            "total": 0
+          },
+          "gems": [
+            173128
+          ],
+          "bonuses": [
+            7188,
+            43,
+            6935,
+            1485,
+            6646
+          ]
+        },
+        "wrist": {
+          "item_id": 182977,
+          "item_level": 213,
+          "enchant": 6222,
+          "icon": "inv_bracer_mail_revendrethraid_d_01",
+          "name": "Bangles of Errant Pride",
+          "item_quality": 4,
+          "is_legendary": false,
+          "is_azerite_armor": false,
+          "azerite_powers": [],
+          "corruption": {
+            "added": 0,
+            "resisted": 0,
+            "total": 0
+          },
+          "gems": [],
+          "bonuses": [
+            7188,
+            6652,
+            7194,
+            1485,
+            6646
+          ]
+        },
+        "hands": {
+          "item_id": 178798,
+          "item_level": 220,
+          "icon": "inv_glove_mail_oribosdungeon_c_01",
+          "name": "Grips of Overwhelming Beatings",
+          "item_quality": 4,
+          "is_legendary": false,
+          "is_azerite_armor": false,
+          "azerite_powers": [],
+          "corruption": {
+            "added": 0,
+            "resisted": 0,
+            "total": 0
+          },
+          "gems": [],
+          "bonuses": [
+            7210,
+            42,
+            1501,
+            5878,
+            6646
+          ]
+        },
+        "legs": {
+          "item_id": 179337,
+          "item_level": 223,
+          "icon": "inv_pant_mail_oribosdungeon_c_01",
+          "name": "Techno-Coil Legguards",
+          "item_quality": 4,
+          "is_legendary": false,
+          "is_azerite_armor": false,
+          "azerite_powers": [],
+          "corruption": {
+            "added": 0,
+            "resisted": 0,
+            "total": 0
+          },
+          "gems": [],
+          "bonuses": [
+            7353,
+            7359,
+            6652,
+            1537,
+            6646
+          ]
+        },
+        "feet": {
+          "item_id": 182990,
+          "item_level": 226,
+          "enchant": 6211,
+          "icon": "inv_boot_mail_revendrethraid_d_01",
+          "name": "Legionnaire's Bloodstained Sabatons",
+          "item_quality": 4,
+          "is_legendary": false,
+          "is_azerite_armor": false,
+          "azerite_powers": [],
+          "corruption": {
+            "added": 0,
+            "resisted": 0,
+            "total": 0
+          },
+          "gems": [],
+          "bonuses": [
+            7187,
+            6652,
+            1498,
+            6646
+          ]
+        },
+        "finger1": {
+          "item_id": 178933,
+          "item_level": 216,
+          "enchant": 6166,
+          "icon": "inv_ring_maldraxxus_02_brown",
+          "name": "Arachnid Cipher Ring",
+          "item_quality": 4,
+          "is_legendary": false,
+          "is_azerite_armor": false,
+          "azerite_powers": [],
+          "corruption": {
+            "added": 0,
+            "resisted": 0,
+            "total": 0
+          },
+          "gems": [],
+          "bonuses": [
+            7359,
+            6652,
+            7193,
+            7386,
+            1530,
+            6646
+          ]
+        },
+        "finger2": {
+          "item_id": 178871,
+          "item_level": 216,
+          "enchant": 6166,
+          "icon": "inv_ring_maldraxxus_01_red",
+          "name": "Bloodoath Signet",
+          "item_quality": 4,
+          "is_legendary": false,
+          "is_azerite_armor": false,
+          "azerite_powers": [],
+          "corruption": {
+            "added": 0,
+            "resisted": 0,
+            "total": 0
+          },
+          "gems": [],
+          "bonuses": [
+            7208,
+            6652,
+            7193,
+            1501,
+            5874,
+            6646
+          ]
+        },
+        "trinket1": {
+          "item_id": 178769,
+          "item_level": 226,
+          "icon": "inv_alchemy_elixir_03",
+          "name": "Infinitely Divisible Ooze",
+          "item_quality": 4,
+          "is_legendary": false,
+          "is_azerite_armor": false,
+          "azerite_powers": [],
+          "corruption": {
+            "added": 0,
+            "resisted": 0,
+            "total": 0
+          },
+          "gems": [],
+          "bonuses": [
+            7375,
+            7359,
+            6652,
+            1540,
+            6646
+          ]
+        },
+        "trinket2": {
+          "item_id": 180116,
+          "item_level": 223,
+          "icon": "inv_battery_01",
+          "name": "Overcharged Anima Battery",
+          "item_quality": 4,
+          "is_legendary": false,
+          "is_azerite_armor": false,
+          "azerite_powers": [],
+          "corruption": {
+            "added": 0,
+            "resisted": 0,
+            "total": 0
+          },
+          "gems": [],
+          "bonuses": [
+            7374,
+            7359,
+            6652,
+            1537,
+            6646
+          ]
+        },
+        "mainhand": {
+          "item_id": 180112,
+          "item_level": 220,
+          "enchant": 6195,
+          "icon": "inv_bow_1h_oribosdungeon_c_01",
+          "name": "The Philosopher",
+          "item_quality": 4,
+          "is_legendary": false,
+          "is_azerite_armor": false,
+          "azerite_powers": [],
+          "corruption": {
+            "added": 0,
+            "resisted": 0,
+            "total": 0
+          },
+          "gems": [],
+          "bonuses": [
+            7359,
+            6652,
+            7415,
+            1534,
+            6646
+          ]
+        }
+      }
+    },
+    "seasonName": "SL Season 1",
+    "mythicPlusScores": {
+      "all": {
+        "score": 1335.6350979641813,
+        "scoreColor": "#5565e2",
+        "runs": [
+          {
+            "zoneId": 12831,
+            "keystoneRunId": 31395542,
+            "mythicLevel": 15,
+            "clearTimeMs": 1604692,
+            "score": 162.9114653873637
+          },
+          {
+            "zoneId": 12837,
+            "keystoneRunId": 29844299,
+            "mythicLevel": 16,
+            "clearTimeMs": 2320094,
+            "score": 177.28808182266965
+          },
+          {
+            "zoneId": 12841,
+            "keystoneRunId": 27727380,
+            "mythicLevel": 15,
+            "clearTimeMs": 1778035,
+            "score": 163.75214331181175
+          },
+          {
+            "zoneId": 12842,
+            "keystoneRunId": 31393551,
+            "mythicLevel": 15,
+            "clearTimeMs": 1910029,
+            "score": 166.44891607278947
+          },
+          {
+            "zoneId": 12916,
+            "keystoneRunId": 31029516,
+            "mythicLevel": 15,
+            "clearTimeMs": 1809072,
+            "score": 163.25322301009692
+          },
+          {
+            "zoneId": 13228,
+            "keystoneRunId": 28484459,
+            "mythicLevel": 15,
+            "clearTimeMs": 2045085,
+            "score": 162.4461268626
+          },
+          {
+            "zoneId": 13309,
+            "keystoneRunId": 31385446,
+            "mythicLevel": 16,
+            "clearTimeMs": 2522892,
+            "score": 177.4890291604998
+          },
+          {
+            "zoneId": 13334,
+            "keystoneRunId": 31029554,
+            "mythicLevel": 15,
+            "clearTimeMs": 1667973,
+            "score": 162.04611233634995
+          }
+        ],
+        "rawRuns": [
+          {
+            "id": 31395542,
+            "region_id": 3,
+            "realm_id": 579,
+            "keystone_team_id": 117722794,
+            "keystone_platoon_id": null,
+            "zone_id": 12831,
+            "faction": "horde",
+            "mythic_level": 15,
+            "clear_time_ms": 1604692,
+            "par_time_ms": 1860999,
+            "period": 801,
+            "completed_at": "2021-05-07T21:19:28.000Z",
+            "affix_0_id": 9,
+            "affix_1_id": 11,
+            "affix_2_id": 13,
+            "affix_3_id": 121,
+            "logged_run_id": null,
+            "created_at": "2021-05-08T01:05:45.000Z",
+            "updated_at": "2021-05-08T01:05:45.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 117722794,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 29844299,
+            "region_id": 3,
+            "realm_id": 579,
+            "keystone_team_id": 115930129,
+            "keystone_platoon_id": null,
+            "zone_id": 12837,
+            "faction": "horde",
+            "mythic_level": 16,
+            "clear_time_ms": 2320094,
+            "par_time_ms": 2340999,
+            "period": 799,
+            "completed_at": "2021-04-24T21:33:56.000Z",
+            "affix_0_id": 9,
+            "affix_1_id": 7,
+            "affix_2_id": 4,
+            "affix_3_id": 121,
+            "logged_run_id": 9643996,
+            "created_at": "2021-04-24T21:34:10.000Z",
+            "updated_at": "2021-04-24T21:34:10.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 115930129,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 27727380,
+            "region_id": 3,
+            "realm_id": 632,
+            "keystone_team_id": 113575900,
+            "keystone_platoon_id": null,
+            "zone_id": 12841,
+            "faction": "horde",
+            "mythic_level": 15,
+            "clear_time_ms": 1778035,
+            "par_time_ms": 2220999,
+            "period": 797,
+            "completed_at": "2021-04-08T17:35:49.000Z",
+            "affix_0_id": 9,
+            "affix_1_id": 6,
+            "affix_2_id": 13,
+            "affix_3_id": 121,
+            "logged_run_id": 8667581,
+            "created_at": "2021-04-08T17:35:55.000Z",
+            "updated_at": "2021-04-08T17:35:55.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 113575900,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 31393551,
+            "region_id": 3,
+            "realm_id": 579,
+            "keystone_team_id": 117722794,
+            "keystone_platoon_id": null,
+            "zone_id": 12842,
+            "faction": "horde",
+            "mythic_level": 15,
+            "clear_time_ms": 1910029,
+            "par_time_ms": 2460999,
+            "period": 801,
+            "completed_at": "2021-05-07T23:25:24.000Z",
+            "affix_0_id": 9,
+            "affix_1_id": 11,
+            "affix_2_id": 13,
+            "affix_3_id": 121,
+            "logged_run_id": null,
+            "created_at": "2021-05-08T00:30:11.000Z",
+            "updated_at": "2021-05-08T00:30:11.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 117722794,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 31029516,
+            "region_id": 3,
+            "realm_id": 579,
+            "keystone_team_id": 115096296,
+            "keystone_platoon_id": null,
+            "zone_id": 12916,
+            "faction": "horde",
+            "mythic_level": 15,
+            "clear_time_ms": 1809072,
+            "par_time_ms": 2160999,
+            "period": 800,
+            "completed_at": "2021-05-04T08:07:36.000Z",
+            "affix_0_id": 10,
+            "affix_1_id": 122,
+            "affix_2_id": 124,
+            "affix_3_id": 121,
+            "logged_run_id": null,
+            "created_at": "2021-05-04T09:28:02.000Z",
+            "updated_at": "2021-05-04T09:28:02.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 115096296,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 28484459,
+            "region_id": 3,
+            "realm_id": 579,
+            "keystone_team_id": 114430246,
+            "keystone_platoon_id": null,
+            "zone_id": 13228,
+            "faction": "horde",
+            "mythic_level": 15,
+            "clear_time_ms": 2045085,
+            "par_time_ms": 2280999,
+            "period": 798,
+            "completed_at": "2021-04-14T14:14:42.000Z",
+            "affix_0_id": 10,
+            "affix_1_id": 123,
+            "affix_2_id": 3,
+            "affix_3_id": 121,
+            "logged_run_id": 9034795,
+            "created_at": "2021-04-14T14:14:45.000Z",
+            "updated_at": "2021-04-14T14:14:45.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 114430246,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 31385446,
+            "region_id": 3,
+            "realm_id": 579,
+            "keystone_team_id": 117722794,
+            "keystone_platoon_id": null,
+            "zone_id": 13309,
+            "faction": "horde",
+            "mythic_level": 16,
+            "clear_time_ms": 2522892,
+            "par_time_ms": 2580999,
+            "period": 801,
+            "completed_at": "2021-05-07T22:11:40.000Z",
+            "affix_0_id": 9,
+            "affix_1_id": 11,
+            "affix_2_id": 13,
+            "affix_3_id": 121,
+            "logged_run_id": null,
+            "created_at": "2021-05-07T22:40:12.000Z",
+            "updated_at": "2021-05-07T22:40:13.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 117722794,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 31029554,
+            "region_id": 3,
+            "realm_id": 579,
+            "keystone_team_id": 115096296,
+            "keystone_platoon_id": null,
+            "zone_id": 13334,
+            "faction": "horde",
+            "mythic_level": 15,
+            "clear_time_ms": 1667973,
+            "par_time_ms": 1800999,
+            "period": 800,
+            "completed_at": "2021-05-04T08:56:39.000Z",
+            "affix_0_id": 10,
+            "affix_1_id": 122,
+            "affix_2_id": 124,
+            "affix_3_id": 121,
+            "logged_run_id": null,
+            "created_at": "2021-05-04T09:29:17.000Z",
+            "updated_at": "2021-05-04T09:29:17.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 115096296,
+            "keystonePlatoonId": null
+          }
+        ]
+      },
+      "dps": {
+        "score": 1335.6350979641813,
+        "scoreColor": "#5565e2",
+        "runs": [
+          {
+            "zoneId": 12831,
+            "keystoneRunId": 31395542,
+            "mythicLevel": 15,
+            "clearTimeMs": 1604692,
+            "score": 162.9114653873637
+          },
+          {
+            "zoneId": 12837,
+            "keystoneRunId": 29844299,
+            "mythicLevel": 16,
+            "clearTimeMs": 2320094,
+            "score": 177.28808182266965
+          },
+          {
+            "zoneId": 12841,
+            "keystoneRunId": 27727380,
+            "mythicLevel": 15,
+            "clearTimeMs": 1778035,
+            "score": 163.75214331181175
+          },
+          {
+            "zoneId": 12842,
+            "keystoneRunId": 31393551,
+            "mythicLevel": 15,
+            "clearTimeMs": 1910029,
+            "score": 166.44891607278947
+          },
+          {
+            "zoneId": 12916,
+            "keystoneRunId": 31029516,
+            "mythicLevel": 15,
+            "clearTimeMs": 1809072,
+            "score": 163.25322301009692
+          },
+          {
+            "zoneId": 13228,
+            "keystoneRunId": 28484459,
+            "mythicLevel": 15,
+            "clearTimeMs": 2045085,
+            "score": 162.4461268626
+          },
+          {
+            "zoneId": 13309,
+            "keystoneRunId": 31385446,
+            "mythicLevel": 16,
+            "clearTimeMs": 2522892,
+            "score": 177.4890291604998
+          },
+          {
+            "zoneId": 13334,
+            "keystoneRunId": 31029554,
+            "mythicLevel": 15,
+            "clearTimeMs": 1667973,
+            "score": 162.04611233634995
+          }
+        ],
+        "rawRuns": [
+          {
+            "id": 31395542,
+            "region_id": 3,
+            "realm_id": 579,
+            "keystone_team_id": 117722794,
+            "keystone_platoon_id": null,
+            "zone_id": 12831,
+            "faction": "horde",
+            "mythic_level": 15,
+            "clear_time_ms": 1604692,
+            "par_time_ms": 1860999,
+            "period": 801,
+            "completed_at": "2021-05-07T21:19:28.000Z",
+            "affix_0_id": 9,
+            "affix_1_id": 11,
+            "affix_2_id": 13,
+            "affix_3_id": 121,
+            "logged_run_id": null,
+            "created_at": "2021-05-08T01:05:45.000Z",
+            "updated_at": "2021-05-08T01:05:45.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 117722794,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 29844299,
+            "region_id": 3,
+            "realm_id": 579,
+            "keystone_team_id": 115930129,
+            "keystone_platoon_id": null,
+            "zone_id": 12837,
+            "faction": "horde",
+            "mythic_level": 16,
+            "clear_time_ms": 2320094,
+            "par_time_ms": 2340999,
+            "period": 799,
+            "completed_at": "2021-04-24T21:33:56.000Z",
+            "affix_0_id": 9,
+            "affix_1_id": 7,
+            "affix_2_id": 4,
+            "affix_3_id": 121,
+            "logged_run_id": 9643996,
+            "created_at": "2021-04-24T21:34:10.000Z",
+            "updated_at": "2021-04-24T21:34:10.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 115930129,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 27727380,
+            "region_id": 3,
+            "realm_id": 632,
+            "keystone_team_id": 113575900,
+            "keystone_platoon_id": null,
+            "zone_id": 12841,
+            "faction": "horde",
+            "mythic_level": 15,
+            "clear_time_ms": 1778035,
+            "par_time_ms": 2220999,
+            "period": 797,
+            "completed_at": "2021-04-08T17:35:49.000Z",
+            "affix_0_id": 9,
+            "affix_1_id": 6,
+            "affix_2_id": 13,
+            "affix_3_id": 121,
+            "logged_run_id": 8667581,
+            "created_at": "2021-04-08T17:35:55.000Z",
+            "updated_at": "2021-04-08T17:35:55.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 113575900,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 31393551,
+            "region_id": 3,
+            "realm_id": 579,
+            "keystone_team_id": 117722794,
+            "keystone_platoon_id": null,
+            "zone_id": 12842,
+            "faction": "horde",
+            "mythic_level": 15,
+            "clear_time_ms": 1910029,
+            "par_time_ms": 2460999,
+            "period": 801,
+            "completed_at": "2021-05-07T23:25:24.000Z",
+            "affix_0_id": 9,
+            "affix_1_id": 11,
+            "affix_2_id": 13,
+            "affix_3_id": 121,
+            "logged_run_id": null,
+            "created_at": "2021-05-08T00:30:11.000Z",
+            "updated_at": "2021-05-08T00:30:11.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 117722794,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 31029516,
+            "region_id": 3,
+            "realm_id": 579,
+            "keystone_team_id": 115096296,
+            "keystone_platoon_id": null,
+            "zone_id": 12916,
+            "faction": "horde",
+            "mythic_level": 15,
+            "clear_time_ms": 1809072,
+            "par_time_ms": 2160999,
+            "period": 800,
+            "completed_at": "2021-05-04T08:07:36.000Z",
+            "affix_0_id": 10,
+            "affix_1_id": 122,
+            "affix_2_id": 124,
+            "affix_3_id": 121,
+            "logged_run_id": null,
+            "created_at": "2021-05-04T09:28:02.000Z",
+            "updated_at": "2021-05-04T09:28:02.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 115096296,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 28484459,
+            "region_id": 3,
+            "realm_id": 579,
+            "keystone_team_id": 114430246,
+            "keystone_platoon_id": null,
+            "zone_id": 13228,
+            "faction": "horde",
+            "mythic_level": 15,
+            "clear_time_ms": 2045085,
+            "par_time_ms": 2280999,
+            "period": 798,
+            "completed_at": "2021-04-14T14:14:42.000Z",
+            "affix_0_id": 10,
+            "affix_1_id": 123,
+            "affix_2_id": 3,
+            "affix_3_id": 121,
+            "logged_run_id": 9034795,
+            "created_at": "2021-04-14T14:14:45.000Z",
+            "updated_at": "2021-04-14T14:14:45.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 114430246,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 31385446,
+            "region_id": 3,
+            "realm_id": 579,
+            "keystone_team_id": 117722794,
+            "keystone_platoon_id": null,
+            "zone_id": 13309,
+            "faction": "horde",
+            "mythic_level": 16,
+            "clear_time_ms": 2522892,
+            "par_time_ms": 2580999,
+            "period": 801,
+            "completed_at": "2021-05-07T22:11:40.000Z",
+            "affix_0_id": 9,
+            "affix_1_id": 11,
+            "affix_2_id": 13,
+            "affix_3_id": 121,
+            "logged_run_id": null,
+            "created_at": "2021-05-07T22:40:12.000Z",
+            "updated_at": "2021-05-07T22:40:13.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 117722794,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 31029554,
+            "region_id": 3,
+            "realm_id": 579,
+            "keystone_team_id": 115096296,
+            "keystone_platoon_id": null,
+            "zone_id": 13334,
+            "faction": "horde",
+            "mythic_level": 15,
+            "clear_time_ms": 1667973,
+            "par_time_ms": 1800999,
+            "period": 800,
+            "completed_at": "2021-05-04T08:56:39.000Z",
+            "affix_0_id": 10,
+            "affix_1_id": 122,
+            "affix_2_id": 124,
+            "affix_3_id": 121,
+            "logged_run_id": null,
+            "created_at": "2021-05-04T09:29:17.000Z",
+            "updated_at": "2021-05-04T09:29:17.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 115096296,
+            "keystonePlatoonId": null
+          }
+        ]
+      },
+      "healer": {
+        "score": 0,
+        "scoreColor": "#ffffff",
+        "runs": [],
+        "rawRuns": []
+      },
+      "tank": {
+        "score": 0,
+        "scoreColor": "#ffffff",
+        "runs": [],
+        "rawRuns": []
+      },
+      "spec_0": {
+        "score": 1335.6350979641813,
+        "scoreColor": "#5565e2",
+        "runs": [
+          {
+            "zoneId": 12831,
+            "keystoneRunId": 31395542,
+            "mythicLevel": 15,
+            "clearTimeMs": 1604692,
+            "score": 162.9114653873637
+          },
+          {
+            "zoneId": 12837,
+            "keystoneRunId": 29844299,
+            "mythicLevel": 16,
+            "clearTimeMs": 2320094,
+            "score": 177.28808182266965
+          },
+          {
+            "zoneId": 12841,
+            "keystoneRunId": 27727380,
+            "mythicLevel": 15,
+            "clearTimeMs": 1778035,
+            "score": 163.75214331181175
+          },
+          {
+            "zoneId": 12842,
+            "keystoneRunId": 31393551,
+            "mythicLevel": 15,
+            "clearTimeMs": 1910029,
+            "score": 166.44891607278947
+          },
+          {
+            "zoneId": 12916,
+            "keystoneRunId": 31029516,
+            "mythicLevel": 15,
+            "clearTimeMs": 1809072,
+            "score": 163.25322301009692
+          },
+          {
+            "zoneId": 13228,
+            "keystoneRunId": 28484459,
+            "mythicLevel": 15,
+            "clearTimeMs": 2045085,
+            "score": 162.4461268626
+          },
+          {
+            "zoneId": 13309,
+            "keystoneRunId": 31385446,
+            "mythicLevel": 16,
+            "clearTimeMs": 2522892,
+            "score": 177.4890291604998
+          },
+          {
+            "zoneId": 13334,
+            "keystoneRunId": 31029554,
+            "mythicLevel": 15,
+            "clearTimeMs": 1667973,
+            "score": 162.04611233634995
+          }
+        ],
+        "rawRuns": [
+          {
+            "id": 31395542,
+            "region_id": 3,
+            "realm_id": 579,
+            "keystone_team_id": 117722794,
+            "keystone_platoon_id": null,
+            "zone_id": 12831,
+            "faction": "horde",
+            "mythic_level": 15,
+            "clear_time_ms": 1604692,
+            "par_time_ms": 1860999,
+            "period": 801,
+            "completed_at": "2021-05-07T21:19:28.000Z",
+            "affix_0_id": 9,
+            "affix_1_id": 11,
+            "affix_2_id": 13,
+            "affix_3_id": 121,
+            "logged_run_id": null,
+            "created_at": "2021-05-08T01:05:45.000Z",
+            "updated_at": "2021-05-08T01:05:45.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 117722794,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 29844299,
+            "region_id": 3,
+            "realm_id": 579,
+            "keystone_team_id": 115930129,
+            "keystone_platoon_id": null,
+            "zone_id": 12837,
+            "faction": "horde",
+            "mythic_level": 16,
+            "clear_time_ms": 2320094,
+            "par_time_ms": 2340999,
+            "period": 799,
+            "completed_at": "2021-04-24T21:33:56.000Z",
+            "affix_0_id": 9,
+            "affix_1_id": 7,
+            "affix_2_id": 4,
+            "affix_3_id": 121,
+            "logged_run_id": 9643996,
+            "created_at": "2021-04-24T21:34:10.000Z",
+            "updated_at": "2021-04-24T21:34:10.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 115930129,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 27727380,
+            "region_id": 3,
+            "realm_id": 632,
+            "keystone_team_id": 113575900,
+            "keystone_platoon_id": null,
+            "zone_id": 12841,
+            "faction": "horde",
+            "mythic_level": 15,
+            "clear_time_ms": 1778035,
+            "par_time_ms": 2220999,
+            "period": 797,
+            "completed_at": "2021-04-08T17:35:49.000Z",
+            "affix_0_id": 9,
+            "affix_1_id": 6,
+            "affix_2_id": 13,
+            "affix_3_id": 121,
+            "logged_run_id": 8667581,
+            "created_at": "2021-04-08T17:35:55.000Z",
+            "updated_at": "2021-04-08T17:35:55.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 113575900,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 31393551,
+            "region_id": 3,
+            "realm_id": 579,
+            "keystone_team_id": 117722794,
+            "keystone_platoon_id": null,
+            "zone_id": 12842,
+            "faction": "horde",
+            "mythic_level": 15,
+            "clear_time_ms": 1910029,
+            "par_time_ms": 2460999,
+            "period": 801,
+            "completed_at": "2021-05-07T23:25:24.000Z",
+            "affix_0_id": 9,
+            "affix_1_id": 11,
+            "affix_2_id": 13,
+            "affix_3_id": 121,
+            "logged_run_id": null,
+            "created_at": "2021-05-08T00:30:11.000Z",
+            "updated_at": "2021-05-08T00:30:11.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 117722794,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 31029516,
+            "region_id": 3,
+            "realm_id": 579,
+            "keystone_team_id": 115096296,
+            "keystone_platoon_id": null,
+            "zone_id": 12916,
+            "faction": "horde",
+            "mythic_level": 15,
+            "clear_time_ms": 1809072,
+            "par_time_ms": 2160999,
+            "period": 800,
+            "completed_at": "2021-05-04T08:07:36.000Z",
+            "affix_0_id": 10,
+            "affix_1_id": 122,
+            "affix_2_id": 124,
+            "affix_3_id": 121,
+            "logged_run_id": null,
+            "created_at": "2021-05-04T09:28:02.000Z",
+            "updated_at": "2021-05-04T09:28:02.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 115096296,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 28484459,
+            "region_id": 3,
+            "realm_id": 579,
+            "keystone_team_id": 114430246,
+            "keystone_platoon_id": null,
+            "zone_id": 13228,
+            "faction": "horde",
+            "mythic_level": 15,
+            "clear_time_ms": 2045085,
+            "par_time_ms": 2280999,
+            "period": 798,
+            "completed_at": "2021-04-14T14:14:42.000Z",
+            "affix_0_id": 10,
+            "affix_1_id": 123,
+            "affix_2_id": 3,
+            "affix_3_id": 121,
+            "logged_run_id": 9034795,
+            "created_at": "2021-04-14T14:14:45.000Z",
+            "updated_at": "2021-04-14T14:14:45.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 114430246,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 31385446,
+            "region_id": 3,
+            "realm_id": 579,
+            "keystone_team_id": 117722794,
+            "keystone_platoon_id": null,
+            "zone_id": 13309,
+            "faction": "horde",
+            "mythic_level": 16,
+            "clear_time_ms": 2522892,
+            "par_time_ms": 2580999,
+            "period": 801,
+            "completed_at": "2021-05-07T22:11:40.000Z",
+            "affix_0_id": 9,
+            "affix_1_id": 11,
+            "affix_2_id": 13,
+            "affix_3_id": 121,
+            "logged_run_id": null,
+            "created_at": "2021-05-07T22:40:12.000Z",
+            "updated_at": "2021-05-07T22:40:13.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 117722794,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 31029554,
+            "region_id": 3,
+            "realm_id": 579,
+            "keystone_team_id": 115096296,
+            "keystone_platoon_id": null,
+            "zone_id": 13334,
+            "faction": "horde",
+            "mythic_level": 15,
+            "clear_time_ms": 1667973,
+            "par_time_ms": 1800999,
+            "period": 800,
+            "completed_at": "2021-05-04T08:56:39.000Z",
+            "affix_0_id": 10,
+            "affix_1_id": 122,
+            "affix_2_id": 124,
+            "affix_3_id": 121,
+            "logged_run_id": null,
+            "created_at": "2021-05-04T09:29:17.000Z",
+            "updated_at": "2021-05-04T09:29:17.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 115096296,
+            "keystonePlatoonId": null
+          }
+        ]
+      },
+      "spec_1": {
+        "score": 461.9120364208501,
+        "scoreColor": "#aeff95",
+        "runs": [
+          {
+            "zoneId": 12831,
+            "keystoneRunId": 25554396,
+            "mythicLevel": 14,
+            "clearTimeMs": 1746432,
+            "score": 147.1636102680949
+          },
+          {
+            "zoneId": 12841,
+            "keystoneRunId": 25298016,
+            "mythicLevel": 12,
+            "clearTimeMs": 2418825,
+            "score": 106.11401981819235
+          },
+          {
+            "zoneId": 12842,
+            "keystoneRunId": 26143708,
+            "mythicLevel": 4,
+            "clearTimeMs": 1728338,
+            "score": 44.10495178990321
+          },
+          {
+            "zoneId": 13228,
+            "keystoneRunId": 25558681,
+            "mythicLevel": 13,
+            "clearTimeMs": 1784432,
+            "score": 137.49016857059738
+          },
+          {
+            "zoneId": 13334,
+            "keystoneRunId": 25221128,
+            "mythicLevel": 2,
+            "clearTimeMs": 969599,
+            "score": 27.03928597406217
+          }
+        ],
+        "rawRuns": [
+          {
+            "id": 25554396,
+            "region_id": 3,
+            "realm_id": 751,
+            "keystone_team_id": 111127189,
+            "keystone_platoon_id": null,
+            "zone_id": 12831,
+            "faction": "horde",
+            "mythic_level": 14,
+            "clear_time_ms": 1746432,
+            "par_time_ms": 1860999,
+            "period": 795,
+            "completed_at": "2021-03-27T01:03:10.000Z",
+            "affix_0_id": 9,
+            "affix_1_id": 122,
+            "affix_2_id": 4,
+            "affix_3_id": 121,
+            "logged_run_id": 7551016,
+            "created_at": "2021-03-27T01:03:12.000Z",
+            "updated_at": "2021-03-27T01:03:12.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 111127189,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 25298016,
+            "region_id": 3,
+            "realm_id": 579,
+            "keystone_team_id": 110884851,
+            "keystone_platoon_id": null,
+            "zone_id": 12841,
+            "faction": "horde",
+            "mythic_level": 12,
+            "clear_time_ms": 2418825,
+            "par_time_ms": 2220999,
+            "period": 795,
+            "completed_at": "2021-03-25T15:12:25.000Z",
+            "affix_0_id": 9,
+            "affix_1_id": 122,
+            "affix_2_id": 4,
+            "affix_3_id": 121,
+            "logged_run_id": null,
+            "created_at": "2021-03-25T15:20:40.000Z",
+            "updated_at": "2021-03-25T15:20:41.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 110884851,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 26143708,
+            "region_id": 3,
+            "realm_id": 596,
+            "keystone_team_id": 111703364,
+            "keystone_platoon_id": null,
+            "zone_id": 12842,
+            "faction": "horde",
+            "mythic_level": 4,
+            "clear_time_ms": 1728338,
+            "par_time_ms": 2460999,
+            "period": 795,
+            "completed_at": "2021-03-29T22:10:48.000Z",
+            "affix_0_id": 9,
+            "affix_1_id": 122,
+            "affix_2_id": 4,
+            "affix_3_id": 121,
+            "logged_run_id": null,
+            "created_at": "2021-03-30T00:17:30.000Z",
+            "updated_at": "2021-03-30T00:17:31.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 111703364,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 25558681,
+            "region_id": 3,
+            "realm_id": 579,
+            "keystone_team_id": 111131005,
+            "keystone_platoon_id": null,
+            "zone_id": 13228,
+            "faction": "horde",
+            "mythic_level": 13,
+            "clear_time_ms": 1784432,
+            "par_time_ms": 2280999,
+            "period": 795,
+            "completed_at": "2021-03-27T00:15:45.000Z",
+            "affix_0_id": 9,
+            "affix_1_id": 122,
+            "affix_2_id": 4,
+            "affix_3_id": 121,
+            "logged_run_id": null,
+            "created_at": "2021-03-27T01:36:09.000Z",
+            "updated_at": "2021-03-27T01:36:10.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 111131005,
+            "keystonePlatoonId": null
+          },
+          {
+            "id": 25221128,
+            "region_id": 3,
+            "realm_id": 579,
+            "keystone_team_id": 110806878,
+            "keystone_platoon_id": null,
+            "zone_id": 13334,
+            "faction": "horde",
+            "mythic_level": 2,
+            "clear_time_ms": 969599,
+            "par_time_ms": 1800999,
+            "period": 795,
+            "completed_at": "2021-03-24T20:17:48.000Z",
+            "affix_0_id": 9,
+            "affix_1_id": 122,
+            "affix_2_id": 4,
+            "affix_3_id": 121,
+            "logged_run_id": null,
+            "created_at": "2021-03-25T00:02:26.000Z",
+            "updated_at": "2021-03-25T00:02:27.000Z",
+            "deleted_at": null,
+            "keystoneTeamId": 110806878,
+            "keystonePlatoonId": null
+          }
+        ]
+      },
+      "spec_2": {
+        "score": 0,
+        "scoreColor": "#ffffff",
+        "runs": [],
+        "rawRuns": []
+      },
+      "spec_3": {
+        "score": 0,
+        "scoreColor": "#ffffff",
+        "runs": [],
+        "rawRuns": []
+      }
+    },
+    "bestMythicPlusScore": {
+      "score": 1335.64,
+      "scoreColor": "#5565e2",
+      "season": {
+        "slug": "season-sl-1",
+        "name": "SL Season 1"
+      }
+    },
+    "bestMythicPlusTeamScore": null,
+    "keystoneAggregateStats": [
+      {
+        "level": 2,
+        "count": 49
+      },
+      {
+        "level": 5,
+        "count": 91
+      },
+      {
+        "level": 10,
+        "count": 64
+      },
+      {
+        "level": 15,
+        "count": 14
+      }
+    ],
+    "previousMythicPlusScore": null,
+    "mythicPlusRanks": {
+      "overall": {
+        "world": 384078,
+        "region": 228635,
+        "realm": 12311
+      },
+      "class": {
+        "world": 40520,
+        "region": 24445,
+        "realm": 1360
+      },
+      "faction_overall": {
+        "world": 279864,
+        "region": 167111,
+        "realm": 12268
+      },
+      "faction_class": {
+        "world": 29521,
+        "region": 18023,
+        "realm": 1357
+      },
+      "dps": {
+        "world": 243096,
+        "region": 144769,
+        "realm": 7964
+      },
+      "class_dps": {
+        "world": 40520,
+        "region": 24445,
+        "realm": 1360
+      },
+      "faction_dps": {
+        "world": 177065,
+        "region": 105840,
+        "realm": 7934
+      },
+      "faction_class_dps": {
+        "world": 29521,
+        "region": 18023,
+        "realm": 1357
+      },
+      "spec_253": {
+        "world": 6789,
+        "region": 3621,
+        "realm": 152
+      },
+      "faction_spec_253": {
+        "world": 4318,
+        "region": 2291,
+        "realm": 152
+      },
+      "spec_254": {
+        "world": 160398,
+        "region": 94480,
+        "realm": 4495
+      },
+      "faction_spec_254": {
+        "world": 111010,
+        "region": 65990,
+        "realm": 4470
+      },
+      "spec_255": {
+        "world": 0,
+        "region": 0,
+        "realm": 0
+      },
+      "faction_spec_255": {
+        "world": 0,
+        "region": 0,
+        "realm": 0
+      }
+    },
+    "season": "season-sl-1",
+    "tier": 26,
+    "isMissingPersonaFields": false,
+    "isTournamentProfile": false,
+    "expansionData": {
+      "expansionId": 8,
+      "covenant": {
+        "id": 3,
+        "name": "Night Fae",
+        "slug": "night-fae",
+        "icon": "ui_sigil_nightfae"
+      },
+      "renownLevel": 40,
+      "activeSoulbindIndex": 0,
+      "soulbinds": [
+        {
+          "id": 1,
+          "name": "Niya",
+          "slug": "niya",
+          "traits": [
+            {
+              "id": 864,
+              "spell": {
+                "id": 322721,
+                "name": "Grove Invigoration",
+                "icon": "ability_druid_manatree",
+                "school": 3,
+                "rank": null
+              }
+            },
+            {
+              "id": 863,
+              "spell": {
+                "id": 342270,
+                "name": "Run Without Tiring",
+                "icon": "ability_racial_runningwild",
+                "school": 3,
+                "rank": null
+              }
+            },
+            {
+              "id": 844,
+              "spell": {
+                "id": 320668,
+                "name": "Nature's Splendor",
+                "icon": "inv_misc_bag_27",
+                "school": 3,
+                "rank": null
+              }
+            },
+            {
+              "id": 859,
+              "spell": {
+                "id": 320660,
+                "name": "Niya's Tools: Poison",
+                "icon": "trade_brewpoison",
+                "school": 3,
+                "rank": null
+              }
+            }
+          ],
+          "conduits": [
+            {
+              "id": 140,
+              "spell": {
+                "id": 339109,
+                "name": "Spirit Attunement",
+                "icon": "inv_archaeology_70_spiritofechero",
+                "school": 0,
+                "rank": "Kyrian"
+              },
+              "rank": 5
+            },
+            {
+              "id": 175,
+              "spell": {
+                "id": 339495,
+                "name": "Reversal of Fortune",
+                "icon": "inv_trickshot",
+                "school": 0,
+                "rank": null
+              },
+              "rank": 6
+            },
+            {
+              "id": 170,
+              "spell": {
+                "id": 339399,
+                "name": "Rejuvenating Wind",
+                "icon": "ability_druid_galewinds",
+                "school": 0,
+                "rank": null
+              },
+              "rank": 6
+            },
+            {
+              "id": 253,
+              "spell": {
+                "id": 341440,
+                "name": "Bloodletting",
+                "icon": "ability_warrior_bloodbath",
+                "school": 0,
+                "rank": null
+              },
+              "rank": 6
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Dreamweaver",
+          "slug": "dreamweaver",
+          "traits": [],
+          "conduits": []
+        },
+        {
+          "id": 6,
+          "name": "Korayn",
+          "slug": "korayn",
+          "traits": [],
+          "conduits": []
+        }
+      ]
+    }
+  }
+}

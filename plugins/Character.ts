@@ -24,7 +24,7 @@ export type Data = {
 
 type CharData = Promise<Data>
 
-class Character {
+export class Character {
   public search(name: string): CharData {
     name = encodeURI(name)
     return http
