@@ -9,7 +9,9 @@
       </form>
     </section>
 
-    <div v-if="loading" class="loading section">Loading ...</div>
+    <div v-if="loading" class="loading section">
+      <b-progress type="is-primary" show-value>Getting your data ...</b-progress>
+    </div>
 
     <div v-if="!loading && data" class="result section">
       <h1 class="title is-1"><span v-text="form.realname"></span> - <span v-text="form.class"></span></h1>

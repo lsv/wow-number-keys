@@ -60,7 +60,7 @@ export default class Dungeon extends Vue {
         return
       }
 
-      if (run.keylevel >= start && run.keylevel <= end) {
+      if (start && end && run.keylevel >= start && run.keylevel <= end) {
         count++
       }
     })
