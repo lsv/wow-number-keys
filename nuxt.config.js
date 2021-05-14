@@ -65,11 +65,11 @@ export default {
   },
 
   proxy: {
-    '/wow-number-keys/keys/': {
+    '/keys/': {
       target: 'https://raider.io/api/characters/mythic-plus-runs',
       pathRewrite: { '^/keys/': '' },
     },
-    '/wow-number-keys/char/': {
+    '/char/': {
       target: 'https://raider.io/api/characters/eu/draenor',
       pathRewrite: { '^/char/': '' },
     },
