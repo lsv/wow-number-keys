@@ -28,7 +28,7 @@ export class Character {
   public search(name: string): CharData {
     name = encodeURI(name)
     return http
-      .get(`/char/${name}?season=season-sl-1&tier=26`)
+      .get(`/wow-number-keys/char/${name}?season=season-sl-1&tier=26`)
       .then((response: AxiosResponse<RaiderIoResponse>) => {
         return {
           success: true,

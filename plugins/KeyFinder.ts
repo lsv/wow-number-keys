@@ -145,7 +145,7 @@ export class KeyfinderClass {
   ): DungeonData {
     return http
       .get(
-        `/keys/?season=${season}&characterId=${charId}&dungeonId=${dungeon.id}&role=all&specId=0&mode=scored&affixes=all`
+        `/wow-number-keys/keys/?season=${season}&characterId=${charId}&dungeonId=${dungeon.id}&role=all&specId=0&mode=scored&affixes=all`
       )
       .then((response: AxiosResponse<RaiderIoResponse>) => {
         const output: DungeonDataResponses = []
