@@ -1,0 +1,314 @@
+{
+  "runs": [
+    {
+      "summary": {
+        "season": "season-sl-1",
+        "dungeon": {
+          "id": 13309,
+          "name": "De Other Side",
+          "short_name": "DOS",
+          "slug": "de-other-side",
+          "expansion_id": 8,
+          "patch": "9.0.2",
+          "keystone_timer_ms": 2580999
+        },
+        "keystone_run_id": 32016416,
+        "mythic_level": 11,
+        "clear_time_ms": 2187689,
+        "keystone_time_ms": 2580999,
+        "completed_at": "2021-05-13T21:25:40.000Z",
+        "num_chests": 1,
+        "time_remaining_ms": 393310,
+        "faction": "horde",
+        "weekly_modifiers": [
+          {
+            "id": 10,
+            "icon": "ability_toughness",
+            "name": "Fortified",
+            "description": "Non-boss enemies have 20% more health and inflict up to 30% increased damage."
+          },
+          {
+            "id": 8,
+            "icon": "spell_shadow_bloodboil",
+            "name": "Sanguine",
+            "description": "When slain, non-boss enemies leave behind a lingering pool of ichor that heals their allies and damages players."
+          },
+          {
+            "id": 12,
+            "icon": "ability_backstab",
+            "name": "Grievous",
+            "description": "Injured players suffer increasing damage over time until healed."
+          },
+          {
+            "id": 121,
+            "icon": "spell_animarevendreth_buff",
+            "name": "Prideful",
+            "description": "Players overflow with pride as they defeat non-boss enemies, eventually forming a Manifestation of Pride. Defeating this Manifestation greatly empowers players."
+          }
+        ],
+        "num_modifiers_active": 4,
+        "role": "dps"
+      },
+      "score": 111.40685623248928
+    },
+    {
+      "summary": {
+        "season": "season-sl-1",
+        "dungeon": {
+          "id": 13309,
+          "name": "De Other Side",
+          "short_name": "DOS",
+          "slug": "de-other-side",
+          "expansion_id": 8,
+          "patch": "9.0.2",
+          "keystone_timer_ms": 2580999
+        },
+        "keystone_run_id": 31738825,
+        "mythic_level": 12,
+        "clear_time_ms": 2463592,
+        "keystone_time_ms": 2580999,
+        "completed_at": "2021-05-11T14:09:51.000Z",
+        "num_chests": 1,
+        "time_remaining_ms": 117407,
+        "faction": "horde",
+        "weekly_modifiers": [
+          {
+            "id": 9,
+            "icon": "achievement_boss_archaedas",
+            "name": "Tyrannical",
+            "description": "Bosses have 30% more health. Bosses and their minions inflict up to 15% increased damage."
+          },
+          {
+            "id": 11,
+            "icon": "ability_ironmaidens_whirlofblood",
+            "name": "Bursting",
+            "description": "When slain, non-boss enemies explode, causing all players to suffer damage over 4 sec. This effect stacks."
+          },
+          {
+            "id": 13,
+            "icon": "spell_fire_felflamering_red",
+            "name": "Explosive",
+            "description": "While in combat, enemies periodically summon Explosive Orbs that will detonate if not destroyed."
+          },
+          {
+            "id": 121,
+            "icon": "spell_animarevendreth_buff",
+            "name": "Prideful",
+            "description": "Players overflow with pride as they defeat non-boss enemies, eventually forming a Manifestation of Pride. Defeating this Manifestation greatly empowers players."
+          }
+        ],
+        "num_modifiers_active": 4,
+        "role": "dps"
+      },
+      "score": 121.45989946130118
+    },
+    {
+      "summary": {
+        "season": "season-sl-1",
+        "dungeon": {
+          "id": 13309,
+          "name": "De Other Side",
+          "short_name": "DOS",
+          "slug": "de-other-side",
+          "expansion_id": 8,
+          "patch": "9.0.2",
+          "keystone_timer_ms": 2580999
+        },
+        "keystone_run_id": 31628384,
+        "mythic_level": 7,
+        "clear_time_ms": 1920851,
+        "keystone_time_ms": 2580999,
+        "completed_at": "2021-05-10T10:38:14.000Z",
+        "num_chests": 2,
+        "time_remaining_ms": 660148,
+        "faction": "horde",
+        "weekly_modifiers": [
+          {
+            "id": 9,
+            "icon": "achievement_boss_archaedas",
+            "name": "Tyrannical",
+            "description": "Bosses have 30% more health. Bosses and their minions inflict up to 15% increased damage."
+          },
+          {
+            "id": 11,
+            "icon": "ability_ironmaidens_whirlofblood",
+            "name": "Bursting",
+            "description": "When slain, non-boss enemies explode, causing all players to suffer damage over 4 sec. This effect stacks."
+          },
+          {
+            "id": 13,
+            "icon": "spell_fire_felflamering_red",
+            "name": "Explosive",
+            "description": "While in combat, enemies periodically summon Explosive Orbs that will detonate if not destroyed."
+          }
+        ],
+        "num_modifiers_active": 3,
+        "role": "dps"
+      },
+      "score": 73.738007453703
+    },
+    {
+      "summary": {
+        "season": "season-sl-1",
+        "dungeon": {
+          "id": 13309,
+          "name": "De Other Side",
+          "short_name": "DOS",
+          "slug": "de-other-side",
+          "expansion_id": 8,
+          "patch": "9.0.2",
+          "keystone_timer_ms": 2580999
+        },
+        "keystone_run_id": 31629813,
+        "mythic_level": 9,
+        "clear_time_ms": 2379889,
+        "keystone_time_ms": 2580999,
+        "completed_at": "2021-05-09T21:50:34.000Z",
+        "num_chests": 1,
+        "time_remaining_ms": 201110,
+        "faction": "horde",
+        "weekly_modifiers": [
+          {
+            "id": 9,
+            "icon": "achievement_boss_archaedas",
+            "name": "Tyrannical",
+            "description": "Bosses have 30% more health. Bosses and their minions inflict up to 15% increased damage."
+          },
+          {
+            "id": 11,
+            "icon": "ability_ironmaidens_whirlofblood",
+            "name": "Bursting",
+            "description": "When slain, non-boss enemies explode, causing all players to suffer damage over 4 sec. This effect stacks."
+          },
+          {
+            "id": 13,
+            "icon": "spell_fire_felflamering_red",
+            "name": "Explosive",
+            "description": "While in combat, enemies periodically summon Explosive Orbs that will detonate if not destroyed."
+          },
+          {
+            "id": 121,
+            "icon": "spell_animarevendreth_buff",
+            "name": "Prideful",
+            "description": "Players overflow with pride as they defeat non-boss enemies, eventually forming a Manifestation of Pride. Defeating this Manifestation greatly empowers players."
+          }
+        ],
+        "num_modifiers_active": 3,
+        "role": "dps"
+      },
+      "score": 90.68179511111784
+    },
+    {
+      "summary": {
+        "season": "season-sl-1",
+        "dungeon": {
+          "id": 13309,
+          "name": "De Other Side",
+          "short_name": "DOS",
+          "slug": "de-other-side",
+          "expansion_id": 8,
+          "patch": "9.0.2",
+          "keystone_timer_ms": 2580999
+        },
+        "keystone_run_id": 31607411,
+        "mythic_level": 11,
+        "clear_time_ms": 3476591,
+        "keystone_time_ms": 2580999,
+        "completed_at": "2021-05-09T20:48:48.000Z",
+        "num_chests": 0,
+        "time_remaining_ms": -895592,
+        "faction": "horde",
+        "weekly_modifiers": [
+          {
+            "id": 9,
+            "icon": "achievement_boss_archaedas",
+            "name": "Tyrannical",
+            "description": "Bosses have 30% more health. Bosses and their minions inflict up to 15% increased damage."
+          },
+          {
+            "id": 11,
+            "icon": "ability_ironmaidens_whirlofblood",
+            "name": "Bursting",
+            "description": "When slain, non-boss enemies explode, causing all players to suffer damage over 4 sec. This effect stacks."
+          },
+          {
+            "id": 13,
+            "icon": "spell_fire_felflamering_red",
+            "name": "Explosive",
+            "description": "While in combat, enemies periodically summon Explosive Orbs that will detonate if not destroyed."
+          },
+          {
+            "id": 121,
+            "icon": "spell_animarevendreth_buff",
+            "name": "Prideful",
+            "description": "Players overflow with pride as they defeat non-boss enemies, eventually forming a Manifestation of Pride. Defeating this Manifestation greatly empowers players."
+          }
+        ],
+        "num_modifiers_active": 4,
+        "role": "dps"
+      },
+      "score": 87.99808338320344
+    },
+    {
+      "summary": {
+        "season": "season-sl-1",
+        "dungeon": {
+          "id": 13309,
+          "name": "De Other Side",
+          "short_name": "DOS",
+          "slug": "de-other-side",
+          "expansion_id": 8,
+          "patch": "9.0.2",
+          "keystone_timer_ms": 2580999
+        },
+        "keystone_run_id": 31472722,
+        "mythic_level": 4,
+        "clear_time_ms": 1520888,
+        "keystone_time_ms": 2580999,
+        "completed_at": "2021-05-08T19:09:58.000Z",
+        "num_chests": 3,
+        "time_remaining_ms": 1060111,
+        "faction": "horde",
+        "weekly_modifiers": [
+          {
+            "id": 9,
+            "icon": "achievement_boss_archaedas",
+            "name": "Tyrannical",
+            "description": "Bosses have 30% more health. Bosses and their minions inflict up to 15% increased damage."
+          },
+          {
+            "id": 11,
+            "icon": "ability_ironmaidens_whirlofblood",
+            "name": "Bursting",
+            "description": "When slain, non-boss enemies explode, causing all players to suffer damage over 4 sec. This effect stacks."
+          },
+          {
+            "id": 13,
+            "icon": "spell_fire_felflamering_red",
+            "name": "Explosive",
+            "description": "While in combat, enemies periodically summon Explosive Orbs that will detonate if not destroyed."
+          },
+          {
+            "id": 121,
+            "icon": "spell_animarevendreth_buff",
+            "name": "Prideful",
+            "description": "Players overflow with pride as they defeat non-boss enemies, eventually forming a Manifestation of Pride. Defeating this Manifestation greatly empowers players."
+          }
+        ],
+        "num_modifiers_active": 2,
+        "role": "dps"
+      },
+      "score": 46.59394608444249
+    }
+  ],
+  "ui": {
+    "season": "season-sl-1",
+    "characterId": 58906699,
+    "dungeonId": 13309,
+    "role": "all",
+    "specId": 0,
+    "mode": "scored",
+    "affixes": "all",
+    "date": "all"
+  }
+}
