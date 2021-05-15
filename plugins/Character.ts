@@ -1,3 +1,5 @@
+// noinspection JSUnusedGlobalSymbols
+
 import http, { AxiosError, AxiosResponse } from 'axios'
 import { Plugin } from '@nuxt/types'
 
@@ -25,10 +27,12 @@ export type Data = {
 type CharData = Promise<Data>
 
 export class Character {
-  public search(name: string): CharData {
+  private currentSeason: string = 'season-sl-1'
+
+  public search(name: string, season: string = this.currentSeason): CharData {
     name = encodeURI(name)
     return http
-      .get(`/wow-number-keys/char/${name}?season=season-sl-1&tier=26`)
+      .get(`https://warm-thicket-51130.herokuapp.com/char/${name}/${season}`)
       .then((response: AxiosResponse<RaiderIoResponse>) => {
         return {
           success: true,

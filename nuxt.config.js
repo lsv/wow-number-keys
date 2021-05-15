@@ -60,20 +60,7 @@ export default {
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {
-    proxy: true,
-  },
-
-  proxy: {
-    '/keys/': {
-      target: 'https://raider.io/api/characters/mythic-plus-runs',
-      pathRewrite: { '^/keys/': '' },
-    },
-    '/char/': {
-      target: 'https://raider.io/api/characters/eu/draenor',
-      pathRewrite: { '^/char/': '' },
-    },
-  },
+  axios: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},

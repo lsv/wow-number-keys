@@ -43,13 +43,15 @@ export default class IndexPage extends Vue {
   }
 
   submit() {
+    this.loading = true
+    this.data = null
+    this.error = null
+
     if (!this.form.name) {
       this.loading = false
       return
     }
 
-    this.data = null
-    this.loading = true
     this.$charfinder()
       .search(this.form.name)
       .then((response) => {

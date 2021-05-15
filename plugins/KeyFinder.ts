@@ -138,15 +138,9 @@ export class KeyfinderClass {
     return this.dungeons
   }
 
-  private getDungeonData(
-    dungeon: dungeon,
-    charId: number,
-    season: string
-  ): DungeonData {
+  private getDungeonData(dungeon: dungeon, charId: number, season: string): DungeonData {
     return http
-      .get(
-        `/wow-number-keys/keys/?season=${season}&characterId=${charId}&dungeonId=${dungeon.id}&role=all&specId=0&mode=scored&affixes=all`
-      )
+      .get(`https://warm-thicket-51130.herokuapp.com/runs/${charId}/${dungeon.id}/${season}`)
       .then((response: AxiosResponse<RaiderIoResponse>) => {
         const output: DungeonDataResponses = []
         response.data.runs.forEach((run) => {
@@ -155,13 +149,9 @@ export class KeyfinderClass {
             keylevel: run.summary.mythic_level,
             upgrade: run.summary.num_chests,
             key_time: run.summary.keystone_time_ms,
-            key_time_duration: Duration.fromMillis(
-              run.summary.keystone_time_ms
-            ),
+            key_time_duration: Duration.fromMillis(run.summary.keystone_time_ms),
             remanining_time: run.summary.time_remaining_ms,
-            remanining_time_duration: Duration.fromMillis(
-              run.summary.time_remaining_ms
-            ),
+            remanining_time_duration: Duration.fromMillis(run.summary.time_remaining_ms),
             score: run.score.toFixed(2),
             role: run.summary.role,
           })
@@ -188,18 +178,11 @@ export class KeyfinderClass {
       })
   }
 
-  public getRunsFromDungeon(
-    dungeon: dungeon,
-    characterId: number,
-    season: string = this.currentSeason
-  ): DungeonData {
+  public getRunsFromDungeon(dungeon: dungeon, characterId: number, season: string = this.currentSeason): DungeonData {
     return this.getDungeonData(dungeon, characterId, season)
   }
 
-  public getRunsFromAllDungeons(
-    characterId: number,
-    season: string = this.currentSeason
-  ): Promise<Array<Data>> {
+  public getRunsFromAllDungeons(characterId: number, season: string = this.currentSeason): Promise<Array<Data>> {
     const promises: Array<DungeonData> = []
 
     this.getDungeons().forEach((dungeon) => {
