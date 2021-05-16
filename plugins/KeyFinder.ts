@@ -140,7 +140,7 @@ export class KeyfinderClass {
 
   private getDungeonData(dungeon: dungeon, charId: number, season: string): DungeonData {
     return http
-      .get(`https://warm-thicket-51130.herokuapp.com/runs/${charId}/${dungeon.id}/${season}`)
+      .get(`https://mysterious-shore-20686.herokuapp.com//runs/${charId}/${dungeon.id}/${season}`)
       .then((response: AxiosResponse<RaiderIoResponse>) => {
         const output: DungeonDataResponses = []
         response.data.runs.forEach((run) => {

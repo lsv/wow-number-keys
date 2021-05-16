@@ -32,7 +32,7 @@ export class Character {
   public search(name: string, season: string = this.currentSeason): CharData {
     name = encodeURI(name)
     return http
-      .get(`https://warm-thicket-51130.herokuapp.com/char/${name}/${season}`)
+      .get(`https://mysterious-shore-20686.herokuapp.com//char/${name}/${season}`)
       .then((response: AxiosResponse<RaiderIoResponse>) => {
         return {
           success: true,
