@@ -16,6 +16,7 @@
     <div v-if="!loading && data" class="result section">
       <h1 class="title is-1"><span v-text="form.realname"></span> - <span v-text="form.class"></span></h1>
       <TotalDungeons :data="data"></TotalDungeons>
+      <LastWeek :data="data"></LastWeek>
       <Dungeon v-for="d in data" :key="d.data.dungeon.id" :data="d.data"></Dungeon>
     </div>
     <div v-if="!loading && error" class="error section" v-text="error"></div>
