@@ -15,6 +15,14 @@ type RaiderIoResponse = {
   }
 }
 
+export type CharacterForm = {
+  id: string
+  name: string
+  realname: string
+  class: string
+  realm: string
+}
+
 export type Data = {
   success: boolean
   data: null | RaiderIoResponse
@@ -28,10 +36,11 @@ type CharData = Promise<Data>
 
 export class Character {
   private currentSeason: string = 'season-sl-1'
-  public search(name: string, season: string = this.currentSeason): CharData {
+  public search(name: string, realm: string, season: string = this.currentSeason): CharData {
+    console.log('realm', realm)
     name = encodeURI(name)
     return http
-      .get(`https://mysterious-shore-20686.herokuapp.com/char/${name}/${season}`)
+      .get(`https://mysterious-shore-20686.herokuapp.com/char/${name}/${season}/${realm}`)
       .then((response: AxiosResponse<RaiderIoResponse>) => {
         return {
           success: true,

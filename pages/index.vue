@@ -1,29 +1,20 @@
 <template>
   <div class="container">
+    <PlayerSearch @form="loadKeys($event)"></PlayerSearch>
+
     <section class="section">
-      <form @submit.prevent="submit">
-        <b-field label="Draenor character">
-          <b-input v-model="form.name"></b-input>
-        </b-field>
-        <b-button label="Get data" type="is-primary" native-type="submit" />
-      </form>
-    </section>
-
-    <div v-if="loading" class="loading section">
-      <b-progress type="is-primary" show-value>Getting your data ...</b-progress>
-    </div>
-
-    <div v-if="!loading && data" class="result section">
-      <div style="display: flex; justify-content: space-between; align-items: center">
-        <h1 class="title is-1"><span v-text="form.realname"></span> - <span v-text="form.class"></span></h1>
-        <b-checkbox v-model="onlyTimed">Only timed keys</b-checkbox>
+      <div v-if="loading" class="loading">
+        <b-progress type="is-primary" show-value>Getting your keys ...</b-progress>
       </div>
-      <TotalDungeons :data="data" :only-timed="onlyTimed"></TotalDungeons>
-      <VaultWeek :data="data" :only-timed="onlyTimed"></VaultWeek>
-      <!--      <LastWeek :data="data" :only-timed="onlyTimed"></LastWeek>-->
-      <Dungeon v-for="d in data" :key="d.data.dungeon.id" :data="d.data" :only-timed="onlyTimed"></Dungeon>
-    </div>
-    <div v-if="!loading && error" class="error section" v-text="error"></div>
+
+      <div v-if="!loading && data" class="result">
+        <b-checkbox v-model="onlyTimed">Only timed keys</b-checkbox>
+        <TotalDungeons :data="data" :only-timed="onlyTimed"></TotalDungeons>
+        <VaultWeek :data="data" :only-timed="onlyTimed"></VaultWeek>
+        <!--      <LastWeek :data="data" :only-timed="onlyTimed"></LastWeek>-->
+        <Dungeon v-for="d in data" :key="d.data.dungeon.id" :data="d.data" :only-timed="onlyTimed"></Dungeon>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -34,62 +25,40 @@ import Dungeon from '~/components/Dungeon.vue'
 import TotalDungeons from '~/components/TotalDungeons.vue'
 import LastWeek from '~/components/LastWeek.vue'
 import VaultWeek from '~/components/VaultWeek.vue'
+import PlayerSearch from '~/components/PlayerSearch.vue'
+import { CharacterForm } from '~/plugins/Character'
 
 @Component({
-  components: { VaultWeek, TotalDungeons, Dungeon, LastWeek },
+  components: { PlayerSearch, VaultWeek, TotalDungeons, Dungeon, LastWeek },
 })
 export default class IndexPage extends Vue {
   loading = false
   data: Array<Data> | null = null
   error: string | null = null
   onlyTimed: boolean = true
-  form = {
-    id: '',
-    name: '',
-    realname: '',
-    class: '',
-  }
+  form: CharacterForm | null = null
 
-  submit() {
-    this.loading = true
+  loadKeys(form: CharacterForm | null) {
+    this.form = form
     this.data = null
     this.error = null
 
-    if (!this.form.name) {
+    if (!form) {
       this.loading = false
       return
     }
 
-    this.$charfinder()
-      .search(this.form.name)
-      .then((response) => {
-        if (response.error) {
-          this.error = 'Character not found'
-          this.loading = false
-          return
-        }
+    this.loading = true
 
-        if (!response.data?.characterDetails.character.id) {
-          this.error = 'Character not found'
-          this.loading = false
-          return
-        }
-
-        this.form.id = response.data.characterDetails.character.id
-        this.form.name = response.data.characterDetails.character.name
-        this.form.realname = response.data.characterDetails.character.name
-        this.form.class = response.data.characterDetails.character.class.name
-
-        this.$keyfinder()
-          .getRunsFromAllDungeons(parseInt(this.form.id))
-          .then((result: Array<Data>) => {
-            this.data = result
-            this.loading = false
-          })
-          .catch((e: any) => {
-            this.error = e.message
-            this.loading = false
-          })
+    this.$keyfinder()
+      .getRunsFromAllDungeons(parseInt(form.id))
+      .then((result: Array<Data>) => {
+        this.data = result
+        this.loading = false
+      })
+      .catch((e: any) => {
+        this.error = e.message
+        this.loading = false
       })
   }
 }

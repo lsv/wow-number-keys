@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <h2 class="title is-2" v-text="data.dungeon.name"></h2>
+    <h3 class="title is-3" v-text="data.dungeon.name"></h3>
     <div class="content">
       <key-list :keys="keys" :name="data.dungeon.id" :only-timed="onlyTimed"></key-list>
     </div>
