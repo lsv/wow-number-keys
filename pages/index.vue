@@ -14,10 +14,14 @@
     </div>
 
     <div v-if="!loading && data" class="result section">
-      <h1 class="title is-1"><span v-text="form.realname"></span> - <span v-text="form.class"></span></h1>
-      <TotalDungeons :data="data"></TotalDungeons>
-      <LastWeek :data="data"></LastWeek>
-      <Dungeon v-for="d in data" :key="d.data.dungeon.id" :data="d.data"></Dungeon>
+      <div style="display: flex; justify-content: space-between; align-items: center">
+        <h1 class="title is-1"><span v-text="form.realname"></span> - <span v-text="form.class"></span></h1>
+        <b-checkbox v-model="onlyTimed">Only timed keys</b-checkbox>
+      </div>
+      <TotalDungeons :data="data" :only-timed="onlyTimed"></TotalDungeons>
+      <VaultWeek :data="data" :only-timed="onlyTimed"></VaultWeek>
+      <!--      <LastWeek :data="data" :only-timed="onlyTimed"></LastWeek>-->
+      <Dungeon v-for="d in data" :key="d.data.dungeon.id" :data="d.data" :only-timed="onlyTimed"></Dungeon>
     </div>
     <div v-if="!loading && error" class="error section" v-text="error"></div>
   </div>
@@ -28,14 +32,17 @@ import { Component, Vue } from 'vue-property-decorator'
 import { Data } from '~/plugins/KeyFinder'
 import Dungeon from '~/components/Dungeon.vue'
 import TotalDungeons from '~/components/TotalDungeons.vue'
+import LastWeek from '~/components/LastWeek.vue'
+import VaultWeek from '~/components/VaultWeek.vue'
 
 @Component({
-  components: { TotalDungeons, Dungeon },
+  components: { VaultWeek, TotalDungeons, Dungeon, LastWeek },
 })
 export default class IndexPage extends Vue {
   loading = false
   data: Array<Data> | null = null
   error: string | null = null
+  onlyTimed: boolean = true
   form = {
     id: '',
     name: '',
