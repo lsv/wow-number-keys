@@ -8,7 +8,7 @@ type dungeon = {
   name: string
 }
 
-type RunResponse = {
+export type RunResponse = {
   score: number
   summary: {
     clear_time_ms: number
@@ -50,11 +50,12 @@ export type DungeonDataResponse = {
   remanining_time_duration: Duration
   score: string
   role: string
+  keystone_run_id: number
 }
 
 export type DungeonDataResponses = Array<DungeonDataResponse>
 
-type RaiderIoResponse = {
+export type RaiderIoResponse = {
   runs: Array<RunResponse>
   ui: {
     affixes: string
@@ -154,6 +155,7 @@ export class KeyfinderClass {
             remanining_time_duration: Duration.fromMillis(run.summary.time_remaining_ms),
             score: run.score.toFixed(2),
             role: run.summary.role,
+            keystone_run_id: run.summary.keystone_run_id,
           })
         })
 

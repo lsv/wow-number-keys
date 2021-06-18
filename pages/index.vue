@@ -13,6 +13,7 @@
         <VaultWeek :data="data" :only-timed="onlyTimed"></VaultWeek>
         <!--      <LastWeek :data="data" :only-timed="onlyTimed"></LastWeek>-->
         <Dungeon v-for="d in data" :key="d.data.dungeon.id" :data="d.data" :only-timed="onlyTimed"></Dungeon>
+        <Roster :data="data" :playerid="form.id" :only-timed="onlyTimed"></Roster>
       </div>
     </section>
   </div>
@@ -27,9 +28,10 @@ import LastWeek from '~/components/LastWeek.vue'
 import VaultWeek from '~/components/VaultWeek.vue'
 import PlayerSearch from '~/components/PlayerSearch.vue'
 import { CharacterForm } from '~/plugins/Character'
+import Roster from '~/components/Roster.vue'
 
 @Component({
-  components: { PlayerSearch, VaultWeek, TotalDungeons, Dungeon, LastWeek },
+  components: { Roster, PlayerSearch, VaultWeek, TotalDungeons, Dungeon, LastWeek },
 })
 export default class IndexPage extends Vue {
   loading = false

@@ -39,6 +39,10 @@ export default {
       src: '~/plugins/Character.ts',
       mode: 'client',
     },
+    {
+      src: '~/plugins/Keydata.ts',
+      mode: 'client',
+    },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
