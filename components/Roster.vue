@@ -4,10 +4,10 @@
     <div class="subtitle is-4">
       <p>With atleast 2 runs together</p>
     </div>
-    <b-progress v-if="loading" show-value>{{ begin }} / {{ end }}</b-progress>
-    <ul v-if="!loading">
+    <b-progress v-if="begin < end" show-value>{{ begin }} / {{ end }}</b-progress>
+    <ul v-if="end >= begin">
       <li v-for="player in players" :key="`player_${player.id}}`">
-        <b><span v-text="player.name"></span></b> <span v-text="player.count"></span> (<span v-text="player.timed"></span>)
+        <b><span v-text="player.name"></span></b> <span v-if="!onlyTimed" v-text="player.count"></span> <span v-if="onlyTimed" v-text="player.timed"></span>
       </li>
     </ul>
   </div>
@@ -17,12 +17,14 @@
 import { Component, Prop, Vue } from 'vue-property-decorator'
 import { Data } from '~/plugins/KeyFinder'
 import { RosterData } from '~/plugins/Keydata'
+import { CharacterForm } from '~/plugins/Character'
 
 @Component
 export default class Roster extends Vue {
   @Prop() readonly data: Array<Data> | undefined
   @Prop() readonly playerid: number | undefined
   @Prop() readonly onlyTimed: boolean = true
+  @Prop() readonly form!: CharacterForm
 
   end = 0
   begin = 0
@@ -36,6 +38,7 @@ export default class Roster extends Vue {
     let p: pdata | undefined
 
     this.rosters.forEach((rost) => {
+      console.log(rost)
       p = players.find((player) => {
         return player.id === rost.id
       })
@@ -80,7 +83,7 @@ export default class Roster extends Vue {
     this.data?.forEach((dungeon) => {
       dungeon.data?.runs.forEach((run) => {
         this.$keydata()
-          .getKeydata(run)
+          .getKeydata(run, this.form.season)
           .then((data) => {
             this.begin++
             if (data.success) {

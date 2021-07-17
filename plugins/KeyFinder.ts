@@ -180,11 +180,11 @@ export class KeyfinderClass {
       })
   }
 
-  public getRunsFromDungeon(dungeon: dungeon, characterId: number, season: string = this.currentSeason): DungeonData {
+  public getRunsFromDungeon(dungeon: dungeon, characterId: number, season: string): DungeonData {
     return this.getDungeonData(dungeon, characterId, season)
   }
 
-  public getRunsFromAllDungeons(characterId: number, season: string = this.currentSeason): Promise<Array<Data>> {
+  public getRunsFromAllDungeons(characterId: number, season: string): Promise<Array<Data>> {
     const promises: Array<DungeonData> = []
 
     this.getDungeons().forEach((dungeon) => {

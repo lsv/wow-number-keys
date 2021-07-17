@@ -10,10 +10,10 @@
       <div v-if="!loading && data" class="result">
         <b-checkbox v-model="onlyTimed">Only timed keys</b-checkbox>
         <TotalDungeons :data="data" :only-timed="onlyTimed"></TotalDungeons>
-        <VaultWeek :data="data" :only-timed="onlyTimed"></VaultWeek>
+        <!--      <VaultWeek :data="data" :only-timed="onlyTimed"></VaultWeek>-->
         <!--      <LastWeek :data="data" :only-timed="onlyTimed"></LastWeek>-->
         <Dungeon v-for="d in data" :key="d.data.dungeon.id" :data="d.data" :only-timed="onlyTimed"></Dungeon>
-        <Roster :data="data" :playerid="form.id" :only-timed="onlyTimed"></Roster>
+        <Roster :data="data" :playerid="form.id" :only-timed="onlyTimed" :form="form"></Roster>
       </div>
     </section>
   </div>
@@ -53,7 +53,7 @@ export default class IndexPage extends Vue {
     this.loading = true
 
     this.$keyfinder()
-      .getRunsFromAllDungeons(parseInt(form.id))
+      .getRunsFromAllDungeons(parseInt(form.id), form.season)
       .then((result: Array<Data>) => {
         this.data = result
         this.loading = false

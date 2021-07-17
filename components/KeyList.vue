@@ -1,7 +1,7 @@
 <template>
   <ul class="totals">
     <li v-for="list in lists" :key="`${name}_${list.start}_${list.end}`">
-      <b-tooltip position="is-bottom" multilined>
+      <b-tooltip position="is-bottom" multilined disable>
         <div class="box">
           <h4 v-text="keyHeader(list.start, list.end)"></h4>
           <p><span v-text="total(list.start, list.end)"></span></p>
@@ -29,7 +29,10 @@ export default class KeyList extends Vue {
     { start: 2, end: 5 },
     { start: 6, end: 9 },
     { start: 10, end: 10 },
-    { start: 11, end: 14 },
+    { start: 11, end: 11 },
+    { start: 12, end: 12 },
+    { start: 13, end: 13 },
+    { start: 14, end: 14 },
     { start: 15, end: 15 },
     { start: 16, end: 20 },
     { start: 21, end: null },

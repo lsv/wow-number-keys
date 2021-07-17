@@ -39,7 +39,7 @@ export type KeydataData = {
 export class Keydata {
   private currentSeason: string = 'season-sl-1'
 
-  public getKeydata(key: DungeonDataResponse, season: string = this.currentSeason): Promise<KeydataData> {
+  public getKeydata(key: DungeonDataResponse, season: string): Promise<KeydataData> {
     const output: KeyResponse = {
       roster: [],
     }

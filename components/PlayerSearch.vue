@@ -6,6 +6,9 @@
         <b-select v-model="form.realm" placeholder="Select a name">
           <option v-for="option in realms" :key="option" :value="option" v-text="option" />
         </b-select>
+        <b-select v-model="form.season" placeholder="Select a season">
+          <option v-for="option in seasons" :key="option.key" :value="option.key" v-text="option.name" />
+        </b-select>
         <b-button label="Get data" type="is-primary" native-type="submit" />
       </b-field>
     </form>
@@ -36,7 +39,19 @@ export default class PlayerSearch extends Vue {
     realname: '',
     class: '',
     realm: 'Draenor',
+    season: 'season-sl-2',
   }
+
+  seasons = [
+    {
+      key: 'season-sl-1',
+      name: 'Shadowlands season 1',
+    },
+    {
+      key: 'season-sl-2',
+      name: 'Shadowlands season 2',
+    },
+  ]
 
   realms = [
     'Aegwynn',
@@ -319,7 +334,7 @@ export default class PlayerSearch extends Vue {
     }
 
     this.$charfinder()
-      .search(this.form.name, this.form.realm)
+      .search(this.form.name, this.form.realm, this.form.season)
       .then((response) => {
         if (response.error) {
           throw new Error('Character not found')

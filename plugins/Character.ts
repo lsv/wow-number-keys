@@ -21,6 +21,7 @@ export type CharacterForm = {
   realname: string
   class: string
   realm: string
+  season: string
 }
 
 export type Data = {
@@ -36,8 +37,7 @@ type CharData = Promise<Data>
 
 export class Character {
   private currentSeason: string = 'season-sl-1'
-  public search(name: string, realm: string, season: string = this.currentSeason): CharData {
-    console.log('realm', realm)
+  public search(name: string, realm: string, season: string): CharData {
     name = encodeURI(name)
     return http
       .get(`https://mysterious-shore-20686.herokuapp.com/char/${name}/${season}/${realm}`)
