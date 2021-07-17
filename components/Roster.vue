@@ -1,16 +1,21 @@
 <template>
-  <div class="content">
+  <section class="content">
     <h2 class="title is-2">Your team mates</h2>
     <div class="subtitle is-4">
       <p>With atleast 2 runs together</p>
     </div>
     <b-progress v-if="begin < end" show-value>{{ begin }} / {{ end }}</b-progress>
-    <ul v-if="end >= begin">
-      <li v-for="player in players" :key="`player_${player.id}}`">
-        <b><span v-text="player.name"></span></b> <span v-if="!onlyTimed" v-text="player.count"></span> <span v-if="onlyTimed" v-text="player.timed"></span>
-      </li>
-    </ul>
-  </div>
+
+    <b-field v-if="end >= begin" grouped group-multiline>
+      <div v-for="player in players" :key="`player_${player.id}}`" class="control">
+        <b-taglist attached>
+          <b-tag type="is-dark" v-text="player.name"></b-tag>
+          <b-tag v-if="!onlyTimed" type="is-info" v-text="player.count"></b-tag>
+          <b-tag v-if="onlyTimed" type="is-info" v-text="player.timed"></b-tag>
+        </b-taglist>
+      </div>
+    </b-field>
+  </section>
 </template>
 
 <script lang="ts">
@@ -38,7 +43,6 @@ export default class Roster extends Vue {
     let p: pdata | undefined
 
     this.rosters.forEach((rost) => {
-      console.log(rost)
       p = players.find((player) => {
         return player.id === rost.id
       })

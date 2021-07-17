@@ -1,27 +1,30 @@
 <template>
-  <section class="section">
-    <form @submit.prevent="submit">
-      <b-field grouped>
-        <b-input v-model="form.name" expanded placeholder="Character name"></b-input>
-        <b-select v-model="form.realm" placeholder="Select a name">
-          <option v-for="option in realms" :key="option" :value="option" v-text="option" />
-        </b-select>
-        <b-select v-model="form.season" placeholder="Select a season">
-          <option v-for="option in seasons" :key="option.key" :value="option.key" v-text="option.name" />
-        </b-select>
-        <b-button label="Get data" type="is-primary" native-type="submit" />
-      </b-field>
-    </form>
+  <section>
+    <section class="section">
+      <form @submit.prevent="submit">
+        <b-field grouped>
+          <b-input v-model="form.name" expanded placeholder="Character name"></b-input>
+          <b-select v-model="form.realm" placeholder="Select a name">
+            <option v-for="option in realms" :key="option" :value="option" v-text="option" />
+          </b-select>
+          <b-select v-model="form.season" placeholder="Select a season">
+            <option v-for="option in seasons" :key="option.key" :value="option.key" v-text="option.name" />
+          </b-select>
+          <b-button label="Get data" type="is-primary" native-type="submit" />
+        </b-field>
+      </form>
+    </section>
+    <section class="section">
+      <div v-if="loading" class="loading section">
+        <b-progress type="is-primary" show-value>Getting your character ...</b-progress>
+      </div>
 
-    <div v-if="loading" class="loading section">
-      <b-progress type="is-primary" show-value>Getting your character ...</b-progress>
-    </div>
+      <div v-if="!loading && error" class="error section" v-text="error"></div>
 
-    <div v-if="!loading && error" class="error section" v-text="error"></div>
-
-    <div v-if="!loading && !error && form.realname">
-      <h1 class="title is-1"><span v-text="form.realname"></span> - <span v-text="form.class"></span></h1>
-    </div>
+      <div v-if="!loading && !error && form.realname">
+        <h1 class="title is-1"><span v-text="form.realname"></span> - <span v-text="form.class"></span></h1>
+      </div>
+    </section>
   </section>
 </template>
 
@@ -348,8 +351,12 @@ export default class PlayerSearch extends Vue {
         this.form.name = response.data.characterDetails.character.name
         this.form.realname = response.data.characterDetails.character.name
         this.form.class = response.data.characterDetails.character.class.name
-        this.loading = false
+      })
+      .then(() => {
         this.$emit('form', this.form)
+      })
+      .then(() => {
+        this.loading = false
       })
       .catch((error: Error) => {
         this.loading = false

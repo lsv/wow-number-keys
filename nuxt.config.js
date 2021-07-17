@@ -18,7 +18,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'mythics-keys',
+    title: 'Mythic dungeon keys',
     htmlAttrs: {
       lang: 'en',
     },

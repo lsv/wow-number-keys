@@ -2,10 +2,9 @@
   <ul class="totals">
     <li v-for="list in lists" :key="`${name}_${list.start}_${list.end}`">
       <b-tooltip position="is-bottom" multilined disable>
-        <div class="box">
-          <h4 v-text="keyHeader(list.start, list.end)"></h4>
-          <p><span v-text="total(list.start, list.end)"></span></p>
-        </div>
+        <b-message :title="keyHeader(list.start, list.end)" :closable="false">
+          <span v-text="total(list.start, list.end)"></span>
+        </b-message>
         <template #content>
           <!-- eslint-disable-next-line vue/no-v-html -->
           <span v-html="html(list.start, list.end)"></span>
