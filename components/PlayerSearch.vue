@@ -41,7 +41,7 @@ export default class PlayerSearch extends Vue {
     name: '',
     realname: '',
     class: '',
-    realm: 'Draenor',
+    realm: 'Silvermoon',
     season: 'season-sl-3',
   }
 
