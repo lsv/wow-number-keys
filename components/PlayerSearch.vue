@@ -41,8 +41,8 @@ export default class PlayerSearch extends Vue {
     name: '',
     realname: '',
     class: '',
-    realm: 'Draenor',
-    season: 'season-sl-3',
+    realm: 'Silvermoon',
+    season: 'season-sl-4',
   }
 
   seasons = [
@@ -57,6 +57,10 @@ export default class PlayerSearch extends Vue {
     {
       key: 'season-sl-3',
       name: 'Shadowlands Season 3',
+    },
+    {
+      key: 'season-sl-4',
+      name: 'Shadowlands Season 4',
     },
   ]
 

@@ -86,8 +86,6 @@ export type Data = {
 type DungeonData = Promise<Data>
 
 export class KeyfinderClass {
-  private currentSeason: string = 'season-sl-1'
-
   dungeons: Array<dungeon> = [
     {
       id: 13309,
@@ -120,6 +118,38 @@ export class KeyfinderClass {
     {
       id: 13228,
       name: 'Plaguefall',
+    },
+    {
+      id: 1000000,
+      name: '"Tazavesh: Streets of Wonder',
+    },
+    {
+      id: 1000001,
+      name: "Tazavesh: So'leah's Gambit",
+    },
+    {
+      id: 800001,
+      name: 'Mechagon Junkyard',
+    },
+    {
+      id: 800002,
+      name: 'Mechagon Workshop',
+    },
+    {
+      id: 6984,
+      name: 'Grimrail Depot',
+    },
+    {
+      id: 6951,
+      name: 'Iron Docks',
+    },
+    {
+      id: 999999,
+      name: 'Return to Karazhan: Upper',
+    },
+    {
+      id: 999998,
+      name: 'Return to Karazhan: Lower',
     },
   ]
 
