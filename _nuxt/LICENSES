@@ -25,6 +25,13 @@
   */
 
 
+/**
+  * vue-class-component v7.2.6
+  * (c) 2015-present Evan You
+  * @license MIT
+  */
+
+
 /*!
   * vue-router v3.5.1
   * (c) 2021 Evan You
@@ -36,10 +43,3 @@
  * (c) 2014-2020 Evan You
  * Released under the MIT License.
  */
-
-
-/**
-  * vue-class-component v7.2.6
-  * (c) 2015-present Evan You
-  * @license MIT
-  */
