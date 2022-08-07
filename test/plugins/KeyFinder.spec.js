@@ -37,7 +37,7 @@ test('Will throw error if dungeon not found', () => {
 
 test('Can get list of dungeons', () => {
   const Keyfinder = new KeyfinderClass()
-  expect(Keyfinder.getDungeons().length).toBe(8)
+  expect(Keyfinder.getDungeons().length).toBe(16)
 })
 
 test('Will throw error if response is not correct', () => {
@@ -46,7 +46,7 @@ test('Will throw error if response is not correct', () => {
 
   const Keyfinder = new KeyfinderClass()
   const dungeon = Keyfinder.getDungeon(13309)
-  const data = Keyfinder.getRunsFromDungeon(dungeon, 1)
+  const data = Keyfinder.getRunsFromDungeon(dungeon, 1, 'season1')
   data.then((result) => {
     expect(result.success).toBeFalsy()
     expect(result.error.message).toBe(errorMessage)
@@ -54,35 +54,17 @@ test('Will throw error if response is not correct', () => {
 })
 
 test('Can get keys from all dungeons', () => {
-  axios.get.mockResolvedValueOnce({
-    data: require('./dungeonresponses/dos.json'),
-  })
-  axios.get.mockResolvedValueOnce({
-    data: require('./dungeonresponses/dos.json'),
-  })
-  axios.get.mockResolvedValueOnce({
-    data: require('./dungeonresponses/dos.json'),
-  })
-  axios.get.mockResolvedValueOnce({
-    data: require('./dungeonresponses/dos.json'),
-  })
-  axios.get.mockResolvedValueOnce({
-    data: require('./dungeonresponses/dos.json'),
-  })
-  axios.get.mockResolvedValueOnce({
-    data: require('./dungeonresponses/dos.json'),
-  })
-  axios.get.mockResolvedValueOnce({
-    data: require('./dungeonresponses/dos.json'),
-  })
-  axios.get.mockResolvedValueOnce({
-    data: require('./dungeonresponses/dos.json'),
-  })
-
   const Keyfinder = new KeyfinderClass()
-  const data = Keyfinder.getRunsFromAllDungeons(1)
+  const dungeons = Keyfinder.getDungeons()
+  for (let i = 0; i < dungeons.length; i++) {
+    axios.get.mockResolvedValueOnce({
+      data: require('./dungeonresponses/dos.json'),
+    })
+  }
+
+  const data = Keyfinder.getRunsFromAllDungeons(1, 'season')
   data.then((result) => {
-    expect(result.length).toBe(8)
+    expect(result.length).toBe(16)
     expect(result[0].success).toBeTruthy()
     expect(result[0].data.dungeon.id).toBe(13309)
   })
