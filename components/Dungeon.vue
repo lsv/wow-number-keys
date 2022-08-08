@@ -1,8 +1,8 @@
 <template>
   <section class="section small-section">
-    <h3 class="title is-3" v-text="data.dungeon.name"></h3>
+    <h4 class="title is-4" v-text="data.dungeon.name"></h4>
     <div class="content">
-      <key-list :keys="keys" :name="data.dungeon.id" :only-timed="onlyTimed"></key-list>
+      <key-list :keys="keys" :name="data.dungeon.name" :only-timed="onlyTimed"></key-list>
     </div>
   </section>
 </template>

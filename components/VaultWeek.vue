@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <h2 class="title is-2">Keys since last vault day</h2>
+    <h3 class="title is-3">Keys since last vault day</h3>
     <KeyList :keys="keys" name="vaultweek" :only-timed="onlyTimed"></KeyList>
   </div>
 </template>

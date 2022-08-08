@@ -1,6 +1,6 @@
 <template>
   <section class="content">
-    <h2 class="title is-2">Your team mates</h2>
+    <h3 class="title is-3">Your team mates</h3>
     <div class="subtitle is-4">
       <p>With atleast 2 runs together</p>
     </div>

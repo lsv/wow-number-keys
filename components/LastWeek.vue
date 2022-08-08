@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <h2 class="title is-2">Last 7 days</h2>
+    <h3 class="title is-3">Last 7 days</h3>
     <key-list :keys="keys" name="lastweek" :only-timed="onlyTimed"></key-list>
   </div>
 </template>

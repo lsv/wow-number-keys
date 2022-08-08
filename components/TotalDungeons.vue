@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <h2 class="title is-2">Totals</h2>
+    <h3 class="title is-3">Totals</h3>
     <key-list :keys="keys" class="large" name="total" :only-timed="onlyTimed"></key-list>
   </div>
 </template>

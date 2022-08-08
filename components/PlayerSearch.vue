@@ -8,7 +8,7 @@
             <option v-for="option in realms" :key="option" :value="option" v-text="option" />
           </b-select>
           <b-select v-model="form.season" placeholder="Select a season">
-            <option v-for="option in seasons" :key="option.key" :value="option.key" v-text="option.name" />
+            <option v-for="option in seasons" :key="option.id" :value="option.id" v-text="option.name" />
           </b-select>
           <b-button label="Get data" type="is-primary" native-type="submit" />
         </b-field>
@@ -31,6 +31,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 import { CharacterForm } from '~/plugins/Character'
+import { getCurrentSeason, getSeasons, SeasonData } from '~/plugins/Seasons'
 
 @Component
 export default class PlayerSearch extends Vue {
@@ -42,27 +43,10 @@ export default class PlayerSearch extends Vue {
     realname: '',
     class: '',
     realm: 'Silvermoon',
-    season: 'season-sl-4',
+    season: getCurrentSeason(),
   }
 
-  seasons = [
-    {
-      key: 'season-sl-1',
-      name: 'Shadowlands season 1',
-    },
-    {
-      key: 'season-sl-2',
-      name: 'Shadowlands season 2',
-    },
-    {
-      key: 'season-sl-3',
-      name: 'Shadowlands Season 3',
-    },
-    {
-      key: 'season-sl-4',
-      name: 'Shadowlands Season 4',
-    },
-  ]
+  seasons: Array<SeasonData> = getSeasons()
 
   realms = [
     'Aegwynn',

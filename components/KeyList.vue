@@ -1,7 +1,7 @@
 <template>
   <ul class="totals">
     <li v-for="list in lists" :key="`${name}_${list.start}_${list.end}`">
-      <b-tooltip position="is-bottom" multilined disable>
+      <b-tooltip v-if="total(list.start, list.end) > 0" position="is-bottom" multilined disable>
         <b-message :title="keyHeader(list.start, list.end)" :closable="false">
           <span v-text="total(list.start, list.end)"></span>
         </b-message>
@@ -10,6 +10,13 @@
           <span v-html="html(list.start, list.end)"></span>
         </template>
       </b-tooltip>
+      <div v-else>
+        <b-message :title="keyHeader(list.start, list.end)" :closable="false">
+          <span v-text="total(list.start, list.end)"></span>
+        </b-message>
+        <!-- eslint-disable-next-line vue/no-v-html -->
+        <span v-html="html(list.start, list.end)"></span>
+      </div>
     </li>
   </ul>
 </template>

@@ -2,10 +2,12 @@
 import { Plugin } from '@nuxt/types'
 import http, { AxiosResponse, AxiosError } from 'axios'
 import { DateTime, Duration } from 'luxon'
+import {SEASON1, SEASON2, SEASON3, SEASON4} from "~/plugins/Seasons";
 
 type dungeon = {
   id: number
   name: string
+  seasons: Array<string>
 }
 
 export type RunResponse = {
@@ -90,66 +92,82 @@ export class KeyfinderClass {
     {
       id: 13309,
       name: 'De Other Side',
+      seasons: [SEASON1, SEASON2, SEASON3],
     },
     {
       id: 13334,
       name: 'Mists of Tirna Scithe',
+      seasons: [SEASON1, SEASON2, SEASON3],
     },
     {
       id: 12837,
       name: 'Spires of Ascension',
+      seasons: [SEASON1, SEASON2, SEASON3],
     },
     {
       id: 12842,
       name: 'Sanguine Depths',
+      seasons: [SEASON1, SEASON2, SEASON3],
     },
     {
       id: 12841,
       name: 'Theater of Pain',
+      seasons: [SEASON1, SEASON2, SEASON3],
     },
     {
       id: 12916,
       name: 'The Necrotic Wake',
+      seasons: [SEASON1, SEASON2, SEASON3],
     },
     {
       id: 12831,
       name: 'Halls of Atonement',
+      seasons: [SEASON1, SEASON2, SEASON3],
     },
     {
       id: 13228,
       name: 'Plaguefall',
+      seasons: [SEASON1, SEASON2, SEASON3],
     },
     {
       id: 1000000,
-      name: '"Tazavesh: Streets of Wonder',
+      name: 'Tazavesh: Streets of Wonder',
+      seasons: [SEASON1, SEASON2, SEASON3, SEASON4],
     },
     {
       id: 1000001,
       name: "Tazavesh: So'leah's Gambit",
+      seasons: [SEASON1, SEASON2, SEASON3, SEASON4],
     },
     {
       id: 800001,
       name: 'Mechagon Junkyard',
+      seasons: [SEASON4],
     },
     {
       id: 800002,
       name: 'Mechagon Workshop',
+      seasons: [SEASON4],
     },
     {
       id: 6984,
       name: 'Grimrail Depot',
+      seasons: [SEASON4],
     },
     {
       id: 6951,
       name: 'Iron Docks',
+      seasons: [SEASON4],
     },
     {
       id: 999999,
       name: 'Return to Karazhan: Upper',
+      seasons: [SEASON4],
     },
     {
       id: 999998,
       name: 'Return to Karazhan: Lower',
+      seasons: [SEASON4],
     },
   ]
 
@@ -165,8 +183,10 @@ export class KeyfinderClass {
     throw new Error(`Dungeon with ID ${id} does not exists`)
   }
 
-  public getDungeons(): Array<dungeon> {
-    return this.dungeons
+  public getDungeons(season: string): Array<dungeon> {
+    return this.dungeons.filter((dungeon) => {
+      return dungeon.seasons.includes(season)
+    })
   }
 
   private getDungeonData(dungeon: dungeon, charId: number, season: string): DungeonData {
@@ -217,7 +237,7 @@ export class KeyfinderClass {
   public getRunsFromAllDungeons(characterId: number, season: string): Promise<Array<Data>> {
     const promises: Array<DungeonData> = []
 
-    this.getDungeons().forEach((dungeon) => {
+    this.getDungeons(season).forEach((dungeon) => {
       promises.push(this.getRunsFromDungeon(dungeon, characterId, season))
     })
 

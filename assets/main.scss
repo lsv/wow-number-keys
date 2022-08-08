@@ -5,10 +5,6 @@ body {
   font-size: 1.25em;
 }
 
-h4 {
-  color: white !important;
-}
-
 progress {
   width: 100%
 }
@@ -50,7 +46,10 @@ ul.totals {
   }
 }
 
+.section {
+  padding: 1rem;
+}
+
 .section.small-section {
-  padding-top: 1rem;
-  padding-bottom: 0;
+  padding: 0.2rem 1rem 0;
 }

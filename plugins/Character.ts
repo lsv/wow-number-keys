@@ -36,7 +36,6 @@ export type Data = {
 type CharData = Promise<Data>
 
 export class Character {
-  private currentSeason: string = 'season-sl-1'
   public search(name: string, realm: string, season: string): CharData {
     name = encodeURI(name)
     return http
